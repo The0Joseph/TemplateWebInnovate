@@ -590,6 +590,9 @@
     .item-accordion-content.active {
         display: block;
     }
+    .section-presentation-bg img{
+        height: 100vh;
+    }
 }
 
 @media (max-width: 768px) {
@@ -619,6 +622,7 @@
     .section-footer-container-logo {
     height: 100px;
     }
+    
     
 }
 
