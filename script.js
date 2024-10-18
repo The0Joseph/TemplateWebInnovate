@@ -72,4 +72,21 @@ document.addEventListener('DOMContentLoaded', function() {
         // Actualiza la posición del último scroll
         lastScrollPosition = currentScrollPosition;
     });
+    
+});
+
+$(document).ready(function(){
+    $('.section-presentation-img').slick({
+        autoplay: true,
+        autoplaySpeed: 300,
+        speed: 900,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        dots: false,
+        infinite: true, 
+    });
+
+
 });

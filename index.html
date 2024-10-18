@@ -6,6 +6,10 @@
     <title>Innovate</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +29,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee" rel="stylesheet">
+    
 </head>
 
 <body>
-
-    
 
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg">
@@ -37,7 +46,7 @@
             <a class="navbar-brand ms-5" href="#">
                 <img src="img/logo-white.png" alt="Logo de Innovate" width="80">
             </a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="dropdown" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-light"></span>
             </button>
             <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent">
@@ -50,20 +59,59 @@
                             <a class="nav-link" aria-current="page" href="#">¿Quiénes somos?</a>
                         </li>
                         <li class="nav-item dropdown position-static mx-md-3">
-                            <a class="nav-link dropdown-toggle triangle-link" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ¿Qué ofrecemos?
                             </a>
                             <!-- Contenido del menú desplegable -->
                             <div class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
 
-                                <div class="container">
-                                    <div class="row row-cols-2">
+                                <div class="container w-50 ">
+                                    <div class="row row-cols-2 dropdown-item-ofrecemos">
                                         <!-- Capacidades ténicas -->
                                         <div class="col">
-                                            Capacidades Técnicas
-                                        </div class="col">
+                                            <div class="col-capacity-technology">
+                                                <header>
+                                                    <div class="logo-capacity-technology">
+                                                        <img src="/img/iconos/tecnologia 32.png" alt="">
+                                                        <!-- <div class="vertical-line"></div> -->
+                                                    </div>
+                                                    <p>Capacidades tecnológicas</p>
+                                                </header>
+                                                <div class="nav-capacity-technology">
+                                                    <ul>
+                                                        <li><a href="">IA</a></li>
+                                                        <li><a href="">ERP</a></li>
+                                                        <li><a href="">CMS</a></li>
+                                                        <li><a href="">BPM</a></li>
+                                                        <li><a href="">ECM</a></li>
+                                                        <li><a href="">CRM</a></li>
+                                                        <li><a href="">BI</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div >
                                         <!-- Servicios -->
-                                        <div>Servicios</div>
+                                        <div class="col">
+                                            <div class="col-service">
+                                                <header>
+                                                    <div class="logo-service">
+                                                        <img src="/img/iconos/servicio-al-cliente.png" alt="">
+                                                    </div>
+                                                    <p>Servicios</p>
+                                                </header>
+                                                <div class="nav-service">
+                                                    <ul>
+                                                        <li><a href="">Servicios de IA y Aprendizaje Automático</a></li>
+                                                        <li><a href="">Servicios en la Nube</a></li>
+                                                        <li><a href="">Servicios de Ciberseguridad</a></li>
+                                                        <li><a href="">Desarrollo de Software a Medida</a></li>
+                                                        <li><a href="">Consultoría Tecnológica</a></li>
+    
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -101,14 +149,24 @@
                     <img src="img/clientes/8.png" alt="">
                     <img src="img/clientes/9.png" alt="">
                     <img src="img/clientes/10.png" alt="">
-                </div>
-                
+                    <img src="img/clientes/11.png" alt="">
+                    <img src="img/clientes/12.png" alt="">
+                    <img src="img/clientes/13.png" alt="">
+                    <img src="img/clientes/14.png" alt="">
+                    <img src="img/clientes/15.png" alt="">
+                    <img src="img/clientes/16.png" alt="">
+                    <img src="img/clientes/17.png" alt="">
+                    <img src="img/clientes/18.png" alt="">
+                    <img src="img/clientes/19.png" alt="">
+                    <img src="img/clientes/20.png" alt="">
+                </div>     
             </div>
         </div>
     </section>
     
     <!-- Servicios -->
     <section class="section-service">
+        <!-- Backgraound -->
         <div class="section-service-bg" style="overflow: hidden;">
             <svg
               preserveAspectRatio="none"
@@ -119,6 +177,7 @@
               <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
             </svg>
         </div>
+        <!-- contenido de servicios -->
         <div class="container">
             <h2 class="py-5">Nuestros Servicios</h2>
             <div class="section-service-container">
@@ -126,7 +185,7 @@
                     <ul class="menu-item">
                         <li class="item" data-content="option01">
                             <div class="item-title">
-                                <!-- <span><i class="fa-solid fa-brain"></i></span> -->
+                                <span><i class="fa-solid fa-brain"></i></span>
                                 <h5>Servicios de IA y Aprendizaje Automático </h5>
                             </div>
                             <div id="option01-content" class="item-accordion-content">
@@ -136,7 +195,7 @@
                         </li>
                         <li class="item" data-content="option02">
                             <div class="item-title">
-                                <!-- <span><i class="fa-solid fa-cloud"></i></span> -->
+                                <span><i class="fa-solid fa-cloud"></i></span>
                                 <h5>Servicios en la Nube</h5>
                             </div>
                             <div id="option02-content" class="item-accordion-content">
@@ -147,7 +206,7 @@
                         </li>
                         <li class="item" data-content="option03">
                             <div class="item-title">
-                                <!-- <span><i class="fa-solid fa-lock"></i></span> -->
+                                <span><i class="fa-solid fa-lock"></i></span>
                                 <h5>Servicios de Ciberseguridad</h5>
                             </div>
                             <div id="option03-content" class="item-accordion-content">
@@ -157,7 +216,7 @@
                         </li>
                         <li class="item" data-content="option04">
                             <div class="item-title">
-                                <!-- <span><i class="fa-solid fa-laptop"></i></span> -->
+                                <span><i class="fa-solid fa-laptop"></i></span>
                                 <h5>Desarrollo de Software a Medida</h5>
                             </div>
                             <div id="option04-content" class="item-accordion-content">
@@ -168,6 +227,7 @@
                         </li>
                         <li class="item" data-content="option05">
                             <div class="item-title">
+                                <span><i class="fa-solid fa-microchip"></i></span>
                                 <h5>Consultoría Tecnológica</h5>
                             </div>
                             <div id="option05-content" class="item-accordion-content">
@@ -180,7 +240,7 @@
                 </div>
                 <div class="section-service-content">
                     <div id="option01" class="content-section active">
-                        <div class="custom-shape">
+                        <div class="custom-shape custom-shape-img-01">
 
                         </div>
                         <h2>Servicios de Inteligencia Artificial y Aprendizaje Automático</h2>
@@ -188,27 +248,56 @@
                             <li><a href="#">¿Qué Abarcan Nuestros Servicios de IA y ML?</a></li>
                             <li><a href="#">Nuestro Enfoque</a></li>
                             <li><a href="#">¿Por Qué Elegirnos para sus Proyectos de IA y ML?</a></li>
-                            <li><a href="#">¿Por Qué Elegirnos para sus Proyectos de IA y ML?</a></li>
+                            <li><a href="#">Solicite una Consulta Gratuita para Explorar las Posibilidades de IA en su Negocio</a></li>
                         </ul>
                     </div>
                     <div id="option02" class="content-section">
+                        <div class="custom-shape custom-shape-img-02">
+
+                        </div>
                         <h2>Servicios en la Nube</h2>
-                        <p>Innovate se caracteriza por personalizar nuestras aplicaciones de software de acuerdo a las necesidades y expectativas del cliente. Contamos con amplia experiencia en el desarrollo de aplicaciones para el sector comercial, educativo, salud, gastronómico, hotelería, de servicios, productivo, entre otros.</p>
-                        <p>Nuestro personal analizará la situación actual de su empresa para lograr un diagnóstico situacional, luego de lo cual formulará propuestas para mejorar las cuales serán validadas por usted, y finalmente adecuar nuestra solución de software a su nuevo modelo de negocio, logrando su empresa el máximo rendimiento.</p>
+                        <ul class="texto">
+                            <li><a href="#">¿Qué Abarcan Nuestros Servicios en la Nube?</a></li>
+                            <li><a href="#">Nuestro Enfoque</a></li>
+                            <li><a href="#">¿Por Qué Elegirnos para sus Servicios en la Nube?</a></li>
+                            <li><a href="#">Solicite una Consulta Gratuita para sus Proyectos en la Nube</a></li>
+                        </ul>
                     </div>
                     <div id="option03" class="content-section">
+                        <div class="custom-shape custom-shape-img-03">
+
+                        </div>
                         <h2>Servicios de Ciberseguridad</h2>
-                        <p>Develop and deploy high-quality content that resonates with your target audience and drives measurable business results.</p>
+                        <ul class="texto">
+                            <li><a href="#">¿Qué Abarcan Nuestros Servicios de Ciberseguridad?</a></li>
+                            <li><a href="#">Nuestro Enfoque</a></li>
+                            <li><a href="#">¿Por Qué Elegirnos para sus Servicios de Ciberseguridad?</a></li>
+                            <li><a href="#">Solicite una Evaluación de Seguridad Gratuita</a></li>
+                        </ul>
                     </div>
                     <div id="option04" class="content-section">
+                        <div class="custom-shape custom-shape-img-04">
+
+                        </div>
                         <h2>Desarrollo de Software a Medida</h2>
-                        <p>Nuestra Fábrica de Software es el núcleo donde la innovación cobra vida.</p>
-                        <p>Desarrollamos soluciones a medida que se adaptan a las necesidades únicas de tu empresa. Con un equipo altamente calificado de ingenieros y desarrolladores, trabajamos en colaboración contigo para transformar tus ideas en soluciones tecnológicas robustas y eficientes.</p>
+                        <ul class="texto">
+                            <li><a href="#">¿Qué Abarca Nuestro Desarrollo de Software a Medida?</a></li>
+                            <li><a href="#">Nuestro Proceso de Desarrollo</a></li>
+                            <li><a href="#">¿Por Qué Elegirnos para su Desarrollo de Software a Medida?</a></li>
+                            <li><a href="#">Solicite una Consulta Gratuita para su Proyecto de Software</a></li>
+                        </ul>
                     </div>
                     <div id="option05" class="content-section">
+                        <div class="custom-shape custom-shape-img-05">
+
+                        </div>
                         <h2>Consultoría Tecnológica</h2>
-                        <p>Nuestra Fábrica de Software es el núcleo donde la innovación cobra vida.</p>
-                        <p>Desarrollamos soluciones a medida que se adaptan a las necesidades únicas de tu empresa. Con un equipo altamente calificado de ingenieros y desarrolladores, trabajamos en colaboración contigo para transformar tus ideas en soluciones tecnológicas robustas y eficientes.</p>
+                        <ul class="texto">
+                            <li><a href="#">Nuestros Servicios de Consultoría Tecnológica en Detalle</a></li>
+                            <li><a href="#">¿Por Qué Elegirnos?</a></li>
+                            <li><a href="#">Nuestro Proceso de Consultoría</a></li>
+                            <li><a href="#">Solicite una Consulta Gratuita</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -373,7 +462,12 @@
         
     </footer>
 
+
 </body>
+<!-- Slick JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+
 </html>
