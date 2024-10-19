@@ -90,11 +90,11 @@
     color: white;
 }
 
-.navbar-brand{
+/* .navbar-brand{
     position: absolute;
     left: 10%;
     top: 3%;
-}
+} */
 
 .navbar-nav .dropdown-menu{
      width: 100vw;
