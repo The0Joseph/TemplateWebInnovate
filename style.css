@@ -12,6 +12,12 @@
     --color-titulo-innovate: #AFA01E;
 }
 
+.icon-service{
+    color:#25D366;
+}
+.icon-technology{
+    color: red;
+}
 
 /* Fonts de google tomadas de un api*/
 .gafata-family{
