@@ -12,12 +12,6 @@
     --color-titulo-innovate: #AFA01E;
 }
 
-.icon-service{
-    color:#25D366;
-}
-.icon-technology{
-    color: red;
-}
 
 /* Fonts de google tomadas de un api*/
 .gafata-family{
@@ -171,8 +165,10 @@
 
 }
 
-.logo-capacity-technology img,
-.logo-service img{
+.logo-capacity-technology svg,
+.logo-service svg{
+    width: 100%;
+    height: 100%;
     position: absolute;
     display: inline-block;
     top: 50%;
@@ -181,11 +177,12 @@
     padding: 4px; 
     background-color: lightgrey;
     border-radius: 20%; 
+    color: var(--color-blanco);
 }
-.logo-capacity-technology img{
+.logo-capacity-technology svg{
     background-color: var(--color-nav-tecnologia);
 }
-.logo-service img{
+.logo-service svg{
     background-color: var(--color-nav-service);
 }
 
