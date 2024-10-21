@@ -332,7 +332,7 @@
 }
 .section-presentation-img img{
     width: 100px;
-    max-width: 300px;
+    max-width: 1100px;
     height: 100px;
     object-fit: cover; 
     filter: grayscale(100%);
