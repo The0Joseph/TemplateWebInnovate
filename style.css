@@ -141,7 +141,6 @@
     display: block;
 }
 
-
 .col-capacity-technology header,
 .col-service header{
     display: inline-block;
@@ -154,7 +153,6 @@
     height: 40px;
     position: relative;
     display: inline-block;
-    
     margin-right: 20px;
 }
 
@@ -246,7 +244,6 @@
     display: inline-block;
     left: -47px;
     visibility: hidden;
-
 }
 .nav-capacity-technology ul li a::before{
     box-shadow: var(--color-nav-tecnologia) 0px 0px 8px;
@@ -331,9 +328,8 @@
     margin: 0 auto;
 }
 .section-presentation-img img{
-    width: 100px;
-    max-width: 1100px;
-    height: 100px;
+    width: 1000px;
+    height: 70px;
     object-fit: cover; 
     filter: grayscale(100%);
     transition: filter 0.2s ease;
@@ -359,66 +355,94 @@
 
 /* Carecteriscas */
 .section-feature{
-    
     position: relative;
 }
 
 .section-feature h2{
     position: relative;
     z-index: 2;
-    
 }
 
 .section-feature-card{
-    position: relative;
+    top: 10px;
     padding-bottom: 30px;
     text-align: center;
+    
 }
 
-.section-feature-card .info-more-link{
+.section-feature-card:nth-child(4n+1){
+    position: relative;
+}
+.section-feature-card:nth-child(4n+2){
+    position: relative;
+    top: 2rem;
+}
+.section-feature-card:nth-child(4n+3){
+    position: relative;
+    top: 4rem;
+}
+.section-feature-card:nth-child(4n+4){
+    position: relative;
+    top: 6rem;
+}
+
+
+.section-feature-card .section-feature-card-img h4{
     position: absolute;
+    width: 90%;
+    font-family: "Reddit Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-top: 27px;
+    bottom: -50px;
     left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+    background-color: var(--color-titulo-innovate);
+    padding: 10px 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+    backdrop-filter: blur(19px);
+    color: white;
+    box-shadow: 0px 1px 6px 2px var(--color-titulo-innovate)
 }
-
 
 .section-feature-card-img{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    transition: all 0.1s linear;
 }
 
 .section-feature-card-img img{
-    height: 295px;
+    height: 260px;
     max-width: 100%;
+    object-fit: cover;
+    transition: all 0.1s ease;
+    box-shadow: 0px 1px 12px 5px #d9d8cea8;
+    border-radius: 5px;
 }
-
-.section-feature-card-img:hover {
+.section-feature-card-img::before{
+    content: url("img/iconos/flecha-derecha.png");
+    position: absolute;
+    z-index: 10;
+    bottom: 50px;
+    right: -30px;
+    visibility: hidden;
+    transition: all 0.1s ease;
+}
+.section-feature-card-img:hover::before{
     transform: scale(1.1);
-    cursor: pointer;    
+    visibility: visible;
+    right: 0;
 }
 
-.section-feature-card h4:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.section-feature-card-img img:hover{
+    transform: scale(1);
+    mask-image: linear-gradient(black 60%, transparent);
 }
 
-.info-more-link a:hover ~ .section-feature-card-img h4{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.info-more-link a:hover ~ .section-feature-card-img img {
-    transform: scale(1.1);
-}
-
-.section-feature-card p{
-    backdrop-filter: blur(10px);
-    padding: 20px 0;
+.section-feature-card-img:hover h4 {
+    visibility: visible;
+    bottom: 0;
+    opacity: 1;
 }
 
 .section-feature-card h4,
@@ -426,12 +450,13 @@
 {
     text-align: center;
     margin-bottom: 30px;
-    
 }
-.section-feature-card h4{
-    font-family: "Reddit Sans", sans-serif;
-    font-weight: 900;
-    margin-top: 27px;
+
+.section-feature-card .info-more-link{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -448,7 +473,6 @@
 .section-service-bg,
 .section-feature-bg{
     position: absolute;
-    
     z-index: 0;
 }
 
@@ -640,7 +664,7 @@
 }
 
 .content-clients img{
-    width: 100px;
+    width: 80%;
     filter: grayscale(100%);
     transition: filter 0.2s ease;
 }
@@ -650,8 +674,15 @@
 
 .content-clients-img div{
     text-align: center;
+    padding: 56px 0;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: #e4e4e4;
 }
 
+.content-clients-img div:nth-child(4){
+    border-width: 0 0 1px 0;
+}
 
 /* Sección footer */
 .section-footer{
