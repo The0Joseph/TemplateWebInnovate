@@ -465,7 +465,7 @@
     border-radius: 3rem;
     margin: 0 16px;
     z-index: 9;
-    
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
 .section-timeline-item > .timeline-item-icon > i{
@@ -486,6 +486,7 @@
     top: 100px;
 }
 
+/* (odd): Para los elementos impares (1, 3, 5, ...) */
 .section-timeline-item:nth-child(odd) > .timeline-item-icon::before {
     content: '';
     position: absolute;
@@ -496,6 +497,8 @@
     right: 100px;
     z-index: 1;
 }
+
+/* (even): Para los elementos pares (2, 4, 6, ...) */
 .section-timeline-item:nth-child(even) > .timeline-item-icon::before {
     content: '';
     position: absolute;
@@ -511,14 +514,7 @@
     display: none;
 }
 
-/* .section-timeline-item > .timeline-item-icon::before:nth-child(n+1) {
-    background-color: black;
-}
 
-.section-timeline-item > .timeline-item-icon:nth-child(2n+1)::after {
-    content: '';
-    
-} */
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección 03 - tarjetas */
