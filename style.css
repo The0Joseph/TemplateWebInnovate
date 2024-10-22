@@ -6,7 +6,7 @@
     --color-lightgray: lightgray;
     --color-gray: gray;
     /* --color-navbar: #AFA01E;  */
-    --color-navbar: #eeca06; 
+    --color-navbar: #DDD273; 
     --color-nav-tecnologia: #6e99e2;
     --color-nav-service: #F07937;
     --color-titulo-innovate: #AFA01E;
@@ -960,7 +960,7 @@
     height: 50px;
     position: relative;
     color: var(--color-blanco);
-    background-color: var(--color-titulo-innovate);
+    background-color: var(--color-navbar);
 }
 
 .icon-department i{

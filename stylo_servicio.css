@@ -6,7 +6,7 @@
     --color-lightgray: lightgray;
     --color-gray: gray;
     /* --color-navbar: #AFA01E;  */
-    --color-navbar: #eeca06; 
+    --color-navbar: #DDD273; 
     --color-nav-tecnologia: #6e99e2;
     --color-nav-service: #F07937;
     --color-titulo-innovate: #AFA01E;
@@ -436,11 +436,12 @@
     width: 800px;
     border-radius: 0.75rem;
     overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .section-timeline-item > article > .timeline-item-title{
     width: 200px;
-    background-color: #2050b3;
+    background-color: var(--color-navbar);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,8 +450,9 @@
 .section-timeline-item > article > .timeline-item-content{
     height: 100%;
     width: 600px;
-    background-color: green;
+    background-color: var(--color-blanco);
     padding: 30px;
+    
 } 
 
 .section-timeline-item > .timeline-item-icon{
