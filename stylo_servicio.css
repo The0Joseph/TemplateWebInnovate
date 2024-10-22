@@ -417,7 +417,6 @@
 }
 .section-timeline-content > .section-timeline-wrapper{
     display: block;
-
 }
 
 .section-timeline-content > .section-timeline-wrapper > .section-timeline-item{
@@ -445,6 +444,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 9;
 }
 
 .section-timeline-item > article > .timeline-item-content{
@@ -452,7 +453,7 @@
     width: 600px;
     background-color: var(--color-blanco);
     padding: 30px;
-    
+    z-index: 9;
 } 
 
 .section-timeline-item > .timeline-item-icon{
@@ -478,17 +479,46 @@
 .section-timeline-item > .timeline-item-icon::after{
     content: '';
     width: 3px;
-    background-color: black;
     height: 100px;
+    background-color: var(--color-lightgray);
     position: absolute;
     z-index: 0;
     top: 100px;
 }
 
-.section-timeline-item > .timeline-item-icon::after:last-child {
+.section-timeline-item:nth-child(odd) > .timeline-item-icon::before {
     content: '';
-    background-color: #0e76a8;
+    position: absolute;
+    background-color: var(--color-lightgray);
+    width: 16px;
+    height: 3px;
+    bottom: 50px;
+    right: 100px;
+    z-index: 1;
 }
+.section-timeline-item:nth-child(even) > .timeline-item-icon::before {
+    content: '';
+    position: absolute;
+    background-color: var(--color-lightgray);
+    width: 16px;
+    height: 3px;
+    bottom: 50px;
+    left: 100px;
+    z-index: 1;
+}
+
+.section-timeline-item:last-child > .timeline-item-icon::after{
+    display: none;
+}
+
+/* .section-timeline-item > .timeline-item-icon::before:nth-child(n+1) {
+    background-color: black;
+}
+
+.section-timeline-item > .timeline-item-icon:nth-child(2n+1)::after {
+    content: '';
+    
+} */
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección 03 - tarjetas */
