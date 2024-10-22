@@ -334,14 +334,159 @@
     align-items: center;
 }
 
+.section-card-expandible-content .container{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card-expandible-item{
+    width: 80px;
+    border-radius: 0.75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card-expandible-item > .card-expandible-item-row{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card-expandible-item > .card-expandible-item-row > .card-expandible-item-icon{
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 8px;
+}
+
+.card-expandible-item > .card-expandible-item-row > .card-expandible-item-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.section-card-expandible-content .container input{
+    display: none;
+}
+
+.section-card-expandible-content .container input:checked + label{
+    width: 600px;
+}
+
+.section-card-expandible-content .container input:checked + label .card-expandible-item-content{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card-expandible-item[for="c1"] {
+    background-image: url('https://www.imgworldsadventure.com/es');
+}
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección 02 - linea de tiempo */
 
 .section-timeline{
-    height: 100vh;
+    height: 200vh;
 }
 
+.section-timeline-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-timeline-content > .section-timeline-wrapper{
+    display: block;
+
+}
+
+.section-timeline-content > .section-timeline-wrapper > .section-timeline-item{
+    position: relative;
+    display: flex;
+    margin: 60px 0px;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.section-timeline-item > article{
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 800px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.section-timeline-item > article > .timeline-item-title{
+    width: 200px;
+    background-color: #2050b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-timeline-item > article > .timeline-item-content{
+    height: 100%;
+    width: 600px;
+    background-color: green;
+    padding: 30px;
+} 
+
+.section-timeline-item > .timeline-item-icon{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    background-color: var(--innovate-amarillo);
+    border-radius: 3rem;
+    margin: 0 16px;
+    z-index: 9;
+    
+}
+
+.section-timeline-item > .timeline-item-icon > i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.section-timeline-item > .timeline-item-icon::after{
+    content: '';
+    width: 3px;
+    background-color: black;
+    height: 100px;
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+}
+
+.section-timeline-item > .timeline-item-icon::after:last-child {
+    content: '';
+    background-color: #0e76a8;
+}
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección 03 - tarjetas */
