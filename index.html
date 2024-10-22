@@ -404,7 +404,7 @@
             </div>
         </div>
 
-        <button class="position-absolute top-100 start-50 translate-middle btn-ver-mas">Ver más</button>
+        <button class="position-absolute top-100 start-50 translate-middle btn-ver-mas"><i class="fa-solid fa-angle-down"></i></button>
 
         <!-- <div class="row row-cols-2 row-cols-lg-4 justify-content-center align-items-center content-clients-img">
             <div class="col-6 col-md-3 col-lg-3">
@@ -454,10 +454,17 @@
     <section class="section-contact parallax" id="contact">
         <div class="container d-flex justify-content-center align-items-center h-100">
             <div>
-                <h3 class="text-center text-black">¿Interesado en nuestros servicios? <strong class="text-primary">¡Contáctanos hoy!</strong></h3>
+                <h3 class="text-center text-black">
+                    <div>
+                        ¿Interesado en nuestros servicios?
+                    </div>
+                    <div>
+                        <strong class="text-primary">¡Contáctanos hoy!</strong>
+                    </div>
+                </h3>
             <!-- icons -->
                 <div class="d-flex justify-content-center my-5 section-contact-icons">
-                    <a href="">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=51954498176">
                         <div class="rounded-pill section-contact-icon icon-whatsapp">
                             <div>
                                 <i class="fa-brands fa-whatsapp"></i>
@@ -465,7 +472,7 @@
                             <div class="icon-title">Whatsapp</div>
                         </div>
                     </a>
-                    <a href="">
+                    <a target="_blank" href="mailto:ejemplo@correo.com?subject=Asunto%20del%20Correo&body=Este%20es%20el%20cuerpo%20del%20correo.">
                         <div class="rounded-pill section-contact-icon icon-email">
                             <div>
                                 <i class="fa-regular fa-envelope"></i>
@@ -487,26 +494,35 @@
                     <div class="section-footer-container-logo">
                         <img src="img/logo.png" alt="">
                     </div>
+                    <div class="section-footer-logo-base"></div>
                 </div>
-                <div class="col-12 col-md-4 section-footer-learn">
-                    <h5>Más información</h5>
-                    <div class="text-center">
-                        Cambiar el diseño de la sección "Contáctanos" ubicado en el footer. Este diseño se va tomar de referencia de la página "https://snowlake.tortoizthemes.com/". Lleva dos tipos de contactos "icono de whatsapp" y "icono de correo (que redireccione al correo de Miguel".
+                <div class="col-12 col-md-4 section-footer-learn mt-md-3 mt-5">
+                    <h5 class="me-2 mb-3 text-center text-md-start ">Sobre nosotros</h5>
+                    <div class="text-center text-md-start text-break">
+                        <p>Brindamos soluciones tecnológicas personalizadas para optimizar procesos y mejorar el rendimiento empresarial, desde consultoría hasta desarrollo de software e inteligencia artificial.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 section-footer-follow">
                     <div class="row row-cols-1">
-                        <div class="col footer-ubicacion">
-                            <h5 class="me-2">Ubícanos en:</h5>
-                            <a target="_blank" href="https://maps.app.goo.gl/LyGeNbjDwEizoAZq7">Ca. 7 de Enero 225, Chiclayo</a>
+                        <div class="col mt-md-3 mt-5">
+                            <div class="row">
+                                <h5 class="me-2 mb-3">Ubícanos en:</h5>
+                            </div>
+                            <div class="row row-cols-2 justify-content-center">
+                                <div class="col-2  rounded-circle icon-department"><i class="fa-regular fa-building"></i></div>
+                                <div class="col-10 icon-title d-flex flex-column ps-4">
+                                    <div>Sede:</div>
+                                    <a target="_blank" href="https://maps.app.goo.gl/LyGeNbjDwEizoAZq7">Ca. 7 de Enero 225, Chiclayo <span class="ms-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col mt-3">
-                            <h5>Nuestras redes sociales</h5>
-                            <div class="row row-cols-4 footer-redes">
-                                <div class="col rounded-pill red-facebook"><a href="#" target="_blank" rel="Red social de Facebook"><i class="fa-brands fa-facebook"></i></a></div>
-                                <div class="col rounded-pill red-Linkedin"><a href="#" target="_blank" rel="Red social de Linkedin"><i class="fa-brands fa-linkedin"></i></a></div>
-                                <div class="col rounded-pill red-Telegram"><a href="#" target="_blank" rel="Red social de Telegram"><i class="fa-brands fa-telegram"></i></a></div>
-                                <div class="col rounded-pill red-Whatsapp"><a href="#" target="_blank" rel="Red social de Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></div>
+                        <div class="col mt-md-3 mt-5">
+                            <h5 class="text-center text-md-start mb-3">Nuestras redes sociales</h5>
+                            <div class="footer-redes">
+                                <a class="py-2 red-facebook mx-2" href="#" target="_blank" rel="Red social de Facebook"><i class="fa-brands fa-facebook"></i></a>
+                                <a class="py-2 red-linkedin mx-2" href="#" target="_blank" rel="Red social de Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                                <a class="py-2 red-telegram mx-2" href="#" target="_blank" rel="Red social de Telegram"><i class="fa-brands fa-telegram"></i></a>
+                                <a class="py-2 red-whatsapp mx-2" href="https://api.whatsapp.com/send?phone=51954498176" target="_blank" rel="Red social de Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>

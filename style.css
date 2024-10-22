@@ -11,6 +11,9 @@
     --color-nav-service: #F07937;
     --color-titulo-innovate: #AFA01E;
     --color-whatsapp: #25D366;
+    --color-facebook: #2050b3;
+    --color-linkedin: #0e76a8;
+    --color-telegram: #24A1DE;
 }
 
 
@@ -491,11 +494,19 @@
     z-index: 2;
     backdrop-filter: blur(10px);
 }
-
 .section-footer-learn ul,
 .section-service-sidebar ul{
     list-style: none;
     padding-left: 0px;
+}
+
+.section-footer-learn h5{
+    font-size: medium;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+.section-footer-learn p{
+    font-size: 0.9rem;
 }
 
 .section-service-sidebar .item .item-title{
@@ -784,9 +795,9 @@
 
 /* Sección footer */
 .section-footer{
-    height: 100vh;
+    height: 50vh;
     width: 100%;
-    background-color: lightgray;
+    background-color: #fff27c;
 }
 
 .section-footer h3{
@@ -799,9 +810,18 @@
     margin-right: 130px;
 }
 
+.section-footer-logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 0 30px 0;
+}
 
 .section-footer-container-logo{
     width: 100%;
+    height: 130px;
     perspective: 500px;
     position: relative;
     display: flex;
@@ -814,20 +834,48 @@
     background-position: center;
     background-size: cover;
     position: absolute;
-    filter: drop-shadow(0px 7px 21px #dda305);
+    filter: drop-shadow(0px 7px 21px white);
     animation: rotar 5s linear infinite ;
 }
-/* .footer-logo{
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background: url("img/logo.png");
-    background-position: center;
-    background-size: cover;
+.section-footer-logo-base{
+    width: 10rem;
+    height: 10rem;
     position: absolute;
-    filter: drop-shadow(0px 7px 21px #ff0000);
-    animation: rotar 5s linear infinite ;
-} */
+    bottom: -94px;
+   
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 10px #11111104;
+    transform: rotateX(80deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-footer-logo-base::before{
+    content: "";
+    width: 4em;
+    height: 4rem;
+    position: absolute;
+    bottom: 5rem;
+    background: var(--innovate-amarillo);
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 10px #11111136;
+    filter: blur(30px);
+    animation: Animate 1s linear infinite;
+}
+@keyframes Animate {
+    from{
+        width: 4rem;
+        height: 4rem;
+    }
+    50%{
+        width: 3rem;
+        height: 3rem;
+    }
+    to{
+        width: 4rem;
+        height: 4rem;
+    }
+}
 
 @keyframes rotar{
     from{
@@ -838,27 +886,10 @@
     }
 }
 
-
-
-.follow-whatsapp{
-    height: 100px;
-    width: 350px;
-    background-color: #25D366;
-    border-radius: 25px;
-    padding: 0 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.follow-whatsapp a{
-    font-size: 40px;
-    color: #ffffff;
-    text-shadow: rgb(75, 122, 78) 0px 0 20px;
-    transition: font-size 0.9s ease;
-}
-.follow-whatsapp a:hover{
-    text-shadow: rgb(46, 73, 48) 0px 0 20px;
-    transform: scale(1.2);
+.section-footer-follow h5{
+    font-size: medium;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
 }
 
 .footer-ubicacion{
@@ -867,10 +898,85 @@
 
 .footer-redes{
     font-size: 23px;
-}
-.footer-redes div{
     text-align: center;
 }
+.footer-redes a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+        /* Red social de Facebook */
+.footer-redes .red-facebook{
+    border-radius: 10px;
+    border: var(--color-facebook) 1px solid;
+    color: var(--color-facebook);
+    
+}
+.footer-redes .red-facebook:hover{
+    color: var(--color-blanco);
+    background-color: var(--color-facebook);
+}
+
+        /* Red social de Linkedin */
+.footer-redes .red-linkedin{
+    border-radius: 10px;
+    border: var(--color-linkedin) 1px solid;
+    color: var(--color-linkedin);
+}
+
+.footer-redes .red-linkedin:hover{
+    color: var(--color-blanco);
+    background-color: var(--color-linkedin);
+}
+
+        /* Red social de Telegram */
+.footer-redes .red-telegram{
+    border-radius: 10px;
+    border: var(--color-telegram) 1px solid;
+    color: var(--color-telegram);
+}
+
+.footer-redes .red-telegram:hover{
+    color: var(--color-blanco);
+    background-color: var(--color-telegram);
+}
+
+        /* Red social de Whatsapp */
+.footer-redes .red-whatsapp{
+    border-radius: 10px;
+    border: var(--color-whatsapp) 1px solid;
+    color: var(--color-whatsapp);
+}
+
+.footer-redes .red-whatsapp:hover{
+    color: var(--color-blanco);
+    background-color: var(--color-whatsapp);
+}
+
+.icon-department{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    color: var(--color-blanco);
+    background-color: var(--color-titulo-innovate);
+}
+
+.icon-department i{
+    font-size: 23px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.icon-title a{
+    text-decoration: none;
+    font-family: "Gafata", sans-serif;
+    color: var(--innovate-anaranjado);
+}
+
 
 @media (max-width: 1200px) {
     .section-service-container{
@@ -920,6 +1026,10 @@
         font-size: 30px;
     }
 
+    .section-footer{
+        height: 100vh;
+    }
+
     .section-footer h3{
         font-size: 20px;
     }
@@ -935,7 +1045,7 @@
         top: 45%;
     }
     .section-footer-container-logo {
-        height: 100px;
+        height: 130px;
     }
     
     .section-presentation-bg .resume{
