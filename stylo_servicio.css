@@ -20,6 +20,12 @@
     --color-amarillo-paleta-3: #dac549;
     --color-amarillo-paleta-4: #c7ac2f;
     --color-amarillo-paleta-5: #b49315;
+
+    --color-rojo-paleta-1: #ff806f;
+    --color-rojo-paleta-2: #e6675a;
+    --color-rojo-paleta-3: #cd4e46;
+    --color-rojo-paleta-4: #b43431;
+    --color-rojo-paleta-5: #9b1b1c;
 }
 
 
@@ -501,6 +507,7 @@
     align-items: center;
     justify-content: center;
     z-index: 10;
+    text-align: center;
 }
 
 .section-timeline-item > article{
