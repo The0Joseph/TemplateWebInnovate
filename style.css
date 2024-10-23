@@ -715,7 +715,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    transition: max-height 0.9s ease-out;
+    transition:  0.9s ease-out;
 }
 
 .content-clients img{

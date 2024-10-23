@@ -6,14 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
     items.forEach(item => {
         item.addEventListener('mouseover', function(){
 
-            items.forEach(item => item.classList.remove('active'));
-            
-            this.classList.add('active')
-
-            // Obtener el valor del data-content del item seleccionado
-            const activeSection = this.getAttribute('data-content');
-            
             if (window.innerWidth > 992) {
+
+                items.forEach(item => item.classList.remove('active'));
+                
+                this.classList.add('active')
+    
+                // Obtener el valor del data-content del item seleccionado
+                const activeSection = this.getAttribute('data-content');
+            
                 
                 // En pantallas grandes, muestra el contenido a la derecha
                 const sections = document.querySelectorAll('.content-section');
@@ -21,32 +22,51 @@ document.addEventListener('DOMContentLoaded', function() {
                 sections.forEach(section => {
                     section.classList.remove('active');
                 });
-                
 
                 // Mostrar la sección activa
                 document.getElementById(activeSection).classList.add('active');
-            } else {
                 
+            } 
+        })
+
+        // Para moviles
+        item.addEventListener('click', function () {
+            
+            if (window.innerWidth <= 992) {
+                // Obtener el valor del data-content del item seleccionado
+                const activeSection = this.getAttribute('data-content');
+
                 // En móviles, comportamiento tipo acordeón
                 const content = document.getElementById(`${activeSection}-content`);
-
+    
                 // Si el contenido ya está visible, ocúltalo
                 if (content.classList.contains('active')) {
                     content.classList.remove('active');
-                } 
-                
-                else {
+                } else {
                     // Ocultar todo el contenido del acordeón
                     const allContents = document.querySelectorAll('.item-accordion-content');
                     allContents.forEach(section => section.classList.remove('active'));
         
                     // Mostrar el contenido seleccionado
                     content.classList.add('active');
-                }
-            }
+            }}
         })
-    })
 
+
+    })
+    
+    // Asegurarse de cerrar cualquier contenido visible al cambiar el tamaño de la pantalla (ej: de móvil a escritorio)
+    // Evento para manejar el cambio de tamaño de pantalla
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 992) {
+            // Cuando se cambia a pantallas grandes, asegurarse de que todo el contenido del acordeón esté cerrado
+            const allContents = document.querySelectorAll('.item-accordion-content');
+            allContents.forEach(section => section.classList.remove('active'));
+        } else {
+            // Cuando se cambia a pantallas móviles, asegurarse de que los contenidos grandes estén ocultos
+            items.forEach(item => item.classList.remove('active'));
+        }
+    });
 
     
 
