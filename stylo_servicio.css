@@ -521,8 +521,40 @@
 
 .section-card{
     height: 100vh;
+    background-color: gray;
+    position: relative;
 }
 
+.section-card  h2{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+.card-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex-wrap: wrap;
+}
+.card-wraper{
+    height: 230px;
+    width: 200px;
+    display: inline-block;
+    background-color: var(--color-gray);
+    border: #0e76a8 1px solid;
+    position: relative;
+    margin: 10px;
+}
+
+.card-wraper > h5,
+.card-wraper > p{
+  text-align: center;
+}
+
+.card-wraper > h5{
+    margin-top: 10px;
+}
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* section contact */
