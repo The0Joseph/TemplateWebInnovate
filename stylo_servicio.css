@@ -613,8 +613,8 @@
     height: 100px;
     position: relative;
     text-align: center;
-    background-color: var(--color-amarillo-paleta-1);
-    color: var(--color-amarillo-paleta-4);
+    background-color: var(--color-amarillo-paleta-0);
+    color: var(--color-amarillo-paleta-5);
     border-radius: 3rem;
     margin: 0 16px;
     z-index: 9;
