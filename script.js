@@ -47,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     })
 
+
+    
+
     let lastScrollPosition = 0;
     const navbar = document.getElementById("navbar");
 
