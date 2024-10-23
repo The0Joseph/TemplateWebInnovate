@@ -131,5 +131,8 @@ $(document).ready(function(){
           ]
     });
 
-
+    $('.card-slick').slick({
+        slidesToShow: 2,
+        infinite: false,
+    })
 });

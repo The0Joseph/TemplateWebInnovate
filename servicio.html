@@ -35,14 +35,14 @@
                 <img src="img/logo-white.png" alt="Logo de Innovate" width="80">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon text-light"></span>
+                <span class="navbar-toggler-icon text-success"></span>
             </button>
 
             <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent">
                 <div class="fw-bold">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item mx-md-3">
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item mx-md-3">
                             <a class="nav-link" aria-current="page" href="#">¿Quiénes somos?</a>
@@ -53,8 +53,8 @@
                             </a>
                             <!-- Contenido del menú desplegable -->
                             <div class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <div class="container w-50 ">
-                                    <div class="row row-cols-2 dropdown-item-ofrecemos">
+                                <div class="container w-lg-50 ">
+                                    <div class="row row-cols-1 row-cols-md-2 dropdown-item-ofrecemos">
                                         <!-- Capacidades ténicas -->
                                         <div class="col">
                                             <div class="col-capacity-technology">
@@ -95,7 +95,6 @@
                                                         <li><a href="">Servicios de Ciberseguridad</a></li>
                                                         <li><a href="">Desarrollo de Software a Medida</a></li>
                                                         <li><a href="">Consultoría Tecnológica</a></li>
-    
                                                     </ul>
                                                 </div>
                                             </div>
@@ -118,17 +117,21 @@
     <section class="section-presentation" >
         <div class="section-presentation-bg">
             <img width="100%" src="img/home/business-people-meeting.jpg" alt="">
-            <h1></h1>
-            <!-- <div class="resume">
+            <h1>En Innovate</h1>
+            <div class="resume">
                 Brindamos soluciones tecnológicas personalizadas para optimizar procesos y mejorar el rendimiento empresarial, desde consultoría hasta desarrollo de software e inteligencia artificial.
-            </div> -->
+            </div>
         </div> 
+        <div class="section-presentation-clients">
+            <div class="section-presentation-clientes-content">
+            </div>
+        </div>
     </section>
 
 
-    <!-- Sección 01 -->
+    <!-- Sección 01  card-expandible-->
     <section class="section-card-expandible">
-        <div class="section-card-expandible-title">
+        <div class="section-card-expandible-title container ">
             <h2>¿Qué Abarcan Nuestros Servicios de IA y ML?</h2>
         </div>
         <div class="section-card-expandible-content">
@@ -217,7 +220,7 @@
         </div>
     </section>
 
-    <!-- Sección timeline -->
+    <!-- Sección 02 timeline -->
     <section class="section-timeline container">
         <div class="section-timeline-title">
             <h2>Nuestro Enfoque</h2>
@@ -362,29 +365,46 @@
         </div> -->
     </section>
 
-    <!-- Sección 03 -->
-    <section class="section-card container">
-        <div class="row row-cols-2 justify-content-center align-items-center h-100">
-            <div class="col section-title">
+    <!-- Sección 03 card -->
+    <section class="section-card container pb-5">
+        <div class="row row-cols-1 row-cols-lg-2 justify-content-center align-items-center h-100">
+            <div class="col section-title text-center text-lg-start">
                 <h2>¿Por Qué Elegirnos para sus Proyectos de IA y ML?</h2>
             </div>
             
             <div class="col">
-                <div class="card-container">
+                <div class="card-container card-slick">
                     <div class="card-wraper card-1">
-                        <h5 class="mt-5">Soy el titulo</h5>
-                        <p>Soy el contenido</p>
+                        <div class="d-flex align-items-center">
+                            <h5>Experiencia Multidisciplinaria</h5>
+                        </div>
+                        <p>Nuestro equipo combina experiencia en IA, ciencia de datos, ingeniería de software y conocimiento del dominio empresarial.</p>
                     </div>
+
                     <div class="card-wraper card-2">
-                        
+                        <div class="d-flex align-items-center">
+                            <h5>Enfoque Personalizado</h5>
+                        </div>
+                        <p>Desarrollamos soluciones a medida que se adaptan perfectamente a sus necesidades y objetivos específicos.</p>
                     </div>
                     <div class="card-wraper card-3">
-                        
+                        <div class="d-flex align-items-center">
+                            <h5>Innovación Constante</h5>
+                        </div>
+                        <p>Nos mantenemos a la vanguardia de las últimas tendencias y avances en IA y ML.</p>
                     </div>
                     <div class="card-wraper card-4">
-                        
+                        <div class="d-flex align-items-center">
+                            <h5>Escalabilidad</h5>
+                        </div>
+                        <p>Nuestras soluciones están diseñadas para crecer con su negocio.</p>
                     </div>
-             
+                    <div class="card-wraper card-5">
+                        <div class="d-flex align-items-center">
+                            <h5>Compromiso con la Ética</h5>
+                        </div>
+                        <p>Implementamos IA responsable, considerando aspectos éticos y de privacidad en cada proyecto.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,7 +444,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Footer -->
     <footer class="section-footer" >
         <div class="container">
