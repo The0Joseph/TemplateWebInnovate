@@ -1017,6 +1017,11 @@
         gap: 0px;
     }
 }
+@media (max-width: 1142px){
+    .section-presentation-bg h1{
+        top: 47%;
+    }
+}
 
 @media (max-width: 992px) {
     .navbar-nav .dropdown-menu{
@@ -1034,7 +1039,7 @@
     }
 
     .section-presentation-bg h1{
-        top: 50%;
+        top: 45%;
     }
     .section-service-container{
         gap: 0px;
@@ -1064,7 +1069,7 @@
         height: 76px; 
         width: 100%;
     }
-    
+
     .follow-whatsapp a{
         font-size: 30px;
     }
