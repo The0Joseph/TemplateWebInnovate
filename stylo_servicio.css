@@ -509,7 +509,7 @@
     left: 100px;
     z-index: 1;
 }
-
+/* Quitar  */
 .section-timeline-item:last-child > .timeline-item-icon::after{
     display: none;
 }
