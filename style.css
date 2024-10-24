@@ -14,6 +14,14 @@
     --color-facebook: #2050b3;
     --color-linkedin: #0e76a8;
     --color-telegram: #24A1DE;
+
+    --color-amarillo-paleta-0: #F8F3A8;
+    --color-amarillo-paleta-1: #fff67c;
+    --color-amarillo-paleta-2: #ecdd62;
+    --color-amarillo-paleta-3: #dac549;
+    --color-amarillo-paleta-4: #c7ac2f;
+    --color-amarillo-paleta-5: #b49315;
+    --color-amarillo-paleta-6: #816D22;
 }
 
 
@@ -52,7 +60,7 @@
 .abeezee-family{
     font-family: "ABeeZee", sans-serif;
 }
-
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* Navbar */
 #navbar{
     position: fixed;
@@ -64,6 +72,13 @@
 }
 #navbar:hover{
     background-color: var(--color-navbar);
+}
+
+.section-service .section-service-title{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: var(--color-amarillo-paleta-5);
 }
 
 .navbar-hidden {
@@ -390,6 +405,9 @@
 
 
 /* Carecteriscas */
+.fondo-svg{
+    fill: var(--color-amarillo-paleta-1);
+}
 .section-feature{
     position: relative;
 }
@@ -397,6 +415,10 @@
 .section-feature h2{
     position: relative;
     z-index: 2;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: var(--color-amarillo-paleta-5);
 }
 
 .section-feature-card{
@@ -584,7 +606,6 @@
     margin: 10px 0;
 }
 
-
 .item-title h5{
     font-size: 16px;
     margin-left: 23px;
@@ -738,6 +759,13 @@
 
 .item-accordion-content > div > a{
     font-size: 13px;
+}
+
+.content-clients h2{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: var(--color-amarillo-paleta-5);
 }
 
 .content-clients img{

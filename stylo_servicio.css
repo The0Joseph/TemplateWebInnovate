@@ -405,22 +405,28 @@
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección 01 - tarjetas expandibles */
 
+.section-card-expandible h2{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: var(--color-amarillo-paleta-5);
+}
+
 .section-card-expandible{
     height: 100vh;
 }
 
 .section-card-expandible-content{
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .section-card-expandible-content .container{
-    height: 400px;
+    height: 420px;
     display: flex;
-    
 }
 
 
@@ -470,6 +476,11 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
+    /* background-color: var(--color-amarillo-paleta-0); */
+}
+
+ .card-expandible-item-column-1:nth-child(1) {
+    background-color: var(--color-amarillo-paleta-0);
 }
 
 .card-expandible-item-column-2{
@@ -480,6 +491,8 @@
     transition-delay: .3s;
     transition: all .3s ease;
     overflow: hidden;
+    position: relative;
+    margin: 0 10px;
 }
 
 .card-expandible-item-column-2 div:nth-child(1){
@@ -493,13 +506,16 @@
     background-color: var(--color-amarillo-paleta-1);
 }
 
+.card-expandible-content-vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
 .card-expandible-content-horizontal{
     background-color: #0e76a8;
     margin-right: 19px;
     border-radius: 0.70rem;
     cursor: default;
-    
-    
 }
 .card-expandible-content-horizontal h5,
 .card-expandible-content-horizontal p{
@@ -556,8 +572,14 @@
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección 02 - linea de tiempo */
 
+.section-timeline  h2{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: var(--color-amarillo-paleta-5);
+}
+
 .section-timeline{
-    /* height: 180vh; */
     height: 100%;
 }
 
@@ -1073,8 +1095,7 @@
         flex-wrap: nowrap; 
         overflow-x: auto;
         scroll-snap-type: x mandatory; 
-        padding: 26px;
-        
+        padding: 36px;
     }
 
     .card-expandible-item{
@@ -1087,6 +1108,8 @@
     .card-expandible-item-column-1 {
         width: 160px;
     }
+
+
 
     .card-expandible-item-column-2{
         font-size: 0.8rem;
