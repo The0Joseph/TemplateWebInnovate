@@ -903,14 +903,12 @@
     background-size: cover;
     position: absolute;
     filter: drop-shadow(0px 7px 21px white);
-    animation: rotar 5s linear infinite ;
 }
 .section-footer-logo-base{
     width: 10rem;
     height: 10rem;
     position: absolute;
-    bottom: -94px;
-   
+    bottom: -76px;
     border-radius: 50%;
     box-shadow: inset 0px 0px 10px 10px #11111104;
     transform: rotateX(80deg);
@@ -1055,6 +1053,10 @@
     .section-presentation-bg h1{
         top: 47%;
     }
+    /* Sección capacidades tecnológicas para movil */
+    .section-feature-card-img img{
+        height: 190px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1097,7 +1099,10 @@
         height: 100vh;
     }
 
-
+    /* Sección capacidades tecnológicas para movil */
+    .section-feature-card-img img{
+        height: 150px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1148,7 +1153,10 @@
     }
 
     /* Capacidades tecnologicas version movil */
-        
+    .section-feature-card-img img{
+        height: 260px;
+    }    
+
     .section-feature-card-img::before{
         right: 140px;
         visibility: hidden;
