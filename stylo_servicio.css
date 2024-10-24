@@ -1097,10 +1097,11 @@
     .section-presentation-bg .resume{
         font-size: medium;
     }
-    
+    /* ------- */
     .section-presentation-bg div{
         top: 53%;
     }
+    /* ------- */
     .section-presentation-img img{
         height: 80px;
     }

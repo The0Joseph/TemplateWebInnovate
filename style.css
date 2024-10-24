@@ -424,7 +424,7 @@
 
 .section-feature-card .section-feature-card-img h4{
     position: absolute;
-    width: 90%;
+    width: 260px;
     font-family: "Reddit Sans", sans-serif;
     font-size: 1.1rem;
     font-weight: 900;
@@ -448,6 +448,7 @@
 
 .section-feature-card-img img{
     height: 260px;
+    width: 260px;
     max-width: 100%;
     object-fit: cover;
     transition: all 0.1s ease;
@@ -466,7 +467,7 @@
 .section-feature-card-img:hover::before{
     transform: scale(1.1);
     visibility: visible;
-    right: 0;
+    right: 10px;
 }
 
 .section-feature-card-img img:hover{
@@ -1083,9 +1084,12 @@
     .item-accordion-content.active {
         display: block;
     }
+
     .section-presentation-bg img{
         height: 100vh;
     }
+
+
 }
 
 @media (max-width: 768px) {
@@ -1134,6 +1138,27 @@
     .content-clients-img div:nth-child(2){
         border-width: 0 0 1px 0;
     }
+
+    /* Capacidades tecnologicas version movil */
+    
+    
+    .section-feature-card-img::before{
+        right: 0px;
+    }
+
+    .section-feature-card:nth-child(4n+2){
+        position: relative;
+        top: 0rem;
+    }
+    .section-feature-card:nth-child(4n+3){
+        position: relative;
+        top: 0rem;
+    }
+    .section-feature-card:nth-child(4n+4){
+        position: relative;
+        top: 0rem;
+    }
+
 }
 
 @media (max-width: 576px) {
