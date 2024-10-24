@@ -455,7 +455,8 @@
     box-shadow: 0px 1px 12px 5px #d9d8cea8;
     border-radius: 5px;
 }
-.section-feature-card-img::before{
+.section-feature-card-img::before,
+.section-feature-card-img h4::after{
     content: url("img/iconos/flecha-derecha.png");
     position: absolute;
     z-index: 10;
@@ -463,8 +464,14 @@
     right: -30px;
     visibility: hidden;
     transition: all 0.1s ease;
-
 }
+
+.section-feature-card-img h4::after{
+    bottom: 20px;
+    right: 0px;
+}
+
+
 .section-feature-card-img:hover::before{
     transform: scale(1.1);
     visibility: visible;
@@ -1141,15 +1148,29 @@
     }
 
     /* Capacidades tecnologicas version movil */
-    
-    
+        
     .section-feature-card-img::before{
         right: 140px;
+        visibility: hidden;
     }
-
+    .section-feature-card-img h4::after{
+        visibility: visible;
+    }
     .section-feature-card-img:hover::before{
         right: 135px;
+        visibility: hidden;
     }
+    .section-feature-card .section-feature-card-img h4{
+        opacity: 1;
+        bottom: 0px;
+        visibility: visible;
+    }
+
+    .section-feature-card-img img{
+        transform: scale(1);
+        mask-image: linear-gradient(black 60%, transparent);
+    }
+    
 
     .section-feature-card:nth-child(4n+2){
         position: relative;
