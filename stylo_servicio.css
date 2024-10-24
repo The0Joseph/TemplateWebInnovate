@@ -420,9 +420,8 @@
 .section-card-expandible-content .container{
     height: 400px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: start;
 }
+
 
 .card-expandible-item{
     width: 80px;
@@ -437,6 +436,8 @@
     transition: .6s cubic-bezier(.28, -0.03, 0, .99);
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
     position: relative;
+
+
 }
 .card-expandible-content{
     position: absolute;
@@ -1059,6 +1060,50 @@
     .section-presentation-bg img{
         height: 100vh;
     }
+
+    /* Tarjetas expandibles para movil */
+
+    .section-card-expandible-content{
+        width: 100%;
+    }
+    .section-card-expandible-content .container{
+        height: 419px;
+        flex-wrap: nowrap; 
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; 
+        padding: 43px;
+    }
+    .section-card-expandible-content .container::-webkit-scrollbar {
+        display: block; /* Esconde la barra de scroll (opcional) */
+    }
+
+    .card-expandible-item{
+        width: 70px;
+        flex: 0 0 auto;
+        margin: 0 10px;
+        scroll-snap-align: start; 
+    }
+
+    .card-expandible-item-column-1 {
+        width: 160px;
+    }
+
+    .card-expandible-item-column-2{
+        font-size: 0.8rem;
+    }
+
+    .card-expandible-item-column-2 h5{
+        font-size: 0.9em;
+    }
+    .card-expandible-item-column-2 p{
+        font-size: 0.7em;
+    }
+
+    .section-card-expandible-content .container input:checked + label {
+        width: 390px;
+    }
+
+
 }
 
 @media (max-width: 768px) {
