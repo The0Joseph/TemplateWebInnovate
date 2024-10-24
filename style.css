@@ -405,6 +405,9 @@
 
 
 /* Carecteriscas */
+.fondo-svg{
+    fill: var(--color-amarillo-paleta-1);
+}
 .section-feature{
     position: relative;
 }
@@ -602,7 +605,6 @@
 .menu-item .item{
     margin: 10px 0;
 }
-
 
 .item-title h5{
     font-size: 16px;
