@@ -420,6 +420,7 @@
 .section-card-expandible-content .container{
     height: 400px;
     display: flex;
+    
 }
 
 
@@ -587,6 +588,7 @@
     border-radius: 0.75rem;
     overflow: hidden;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .section-timeline-item > article > .timeline-item-title{
@@ -1065,16 +1067,14 @@
 
     .section-card-expandible-content{
         width: 100%;
+        
     }
     .section-card-expandible-content .container{
-        height: 419px;
         flex-wrap: nowrap; 
         overflow-x: auto;
         scroll-snap-type: x mandatory; 
-        padding: 43px;
-    }
-    .section-card-expandible-content .container::-webkit-scrollbar {
-        display: block; /* Esconde la barra de scroll (opcional) */
+        padding: 26px;
+        
     }
 
     .card-expandible-item{
@@ -1103,6 +1103,12 @@
         width: 390px;
     }
 
+    /* Timeline version para movil */
+    .section-timeline-item > article{
+        width: 610px;
+        transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
 
 }
 
@@ -1152,6 +1158,70 @@
     }
     .content-clients-img div:nth-child(2){
         border-width: 0 0 1px 0;
+    }
+    /* ------------------------------------------------------------------ */
+    /* Timeline version para movil */
+    .section-timeline{
+        height: 290vh;
+        transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .section-timeline-item > article{
+        width: 100%;
+        font-size: 0.9rem;
+        border-radius: 0 0 10px 10px;
+        z-index: 10;
+    }
+    .section-timeline-item > article > .timeline-item-title{
+        width: 100%;
+        height: 50px;
+        transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    .section-timeline-item > article > .timeline-item-content {
+        width: 100%;
+        padding: 19px;
+        transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .section-timeline-item > .timeline-item-icon {
+        width: 100%;
+        height: 85px;
+        border-radius: 10px 10px 0 0;
+        transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .section-timeline-item > .timeline-item-icon::after{
+        content: none;
+    }
+
+    /* (odd): Para los elementos impares (1, 3, 5, ...) */
+    .section-timeline-item:nth-child(odd){
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .section-timeline-item:nth-child(odd) > article{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /* (even): Para los elementos pares (2, 4, 6, ...) */
+    .section-timeline-item:nth-child(even){
+        flex-direction: column;
+    }
+    .section-timeline-item:nth-child(even) > article{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* (odd): Para los elementos impares (1, 3, 5, ...) */
+    .section-timeline-item:nth-child(odd) > .timeline-item-icon::before {
+        content: none;
+    }
+
+    /* (even): Para los elementos pares (2, 4, 6, ...) */
+    .section-timeline-item:nth-child(even) > .timeline-item-icon::before {
+        content: none;
     }
 
 }
