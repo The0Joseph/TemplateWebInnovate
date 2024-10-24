@@ -354,7 +354,7 @@
 }
 
 .section-presentation-bg .resume{
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 90px;
     font-family: "AR One Sans", sans-serif;
 }
@@ -1017,7 +1017,7 @@
 }
 @media (max-width: 1142px){
     .section-presentation-bg h1{
-        top: 47%;
+        top: 44%;
     }
 }
 
@@ -1037,7 +1037,7 @@
     }
 
     .section-presentation-bg h1{
-        top: 45%;
+        top: 40%;
     }
     .section-service-container{
         gap: 0px;
@@ -1099,7 +1099,7 @@
     }
     
     .section-presentation-bg div{
-        top: 45%;
+        top: 53%;
     }
     .section-presentation-img img{
         height: 80px;
