@@ -134,5 +134,15 @@ $(document).ready(function(){
     $('.card-slick').slick({
         slidesToShow: 2,
         infinite: false,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+        ]
     })
 });

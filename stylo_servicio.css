@@ -703,7 +703,6 @@
     margin: 10px;
     transition: 400ms;
     border-radius: 0.75rem;
-    z-index: 99;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
 }
@@ -1222,6 +1221,17 @@
     /* (even): Para los elementos pares (2, 4, 6, ...) */
     .section-timeline-item:nth-child(even) > .timeline-item-icon::before {
         content: none;
+    }
+
+    /* ------------------------------------------------------- */
+    /* Sección 03 - card  */
+    .slick-prev {
+        left: -3px !important;
+        z-index: 99;
+    }
+
+    .slick-next {
+        right: -3px !important;
     }
 
 }
