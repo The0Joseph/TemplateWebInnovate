@@ -851,15 +851,25 @@
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección footer */
+
 .section-footer{
     height: 50vh;
     width: 100%;
-    background-color: #fff27c;
+    background-color: var(--color-amarillo-paleta-1);
 }
 
-.section-footer h3{
-    font-size: 26px;
+.section-footer-learn p{
+    font-size: 0.9rem;
 }
+
+.section-footer h5,
+.section-footer-follow h5{
+    font-size: medium;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: var(--color-amarillo-paleta-6);
+}
+
 .section-footer .title-whatsapp div:nth-child(1) {
     margin-left: 130px;
 }
@@ -891,15 +901,16 @@
     background-position: center;
     background-size: cover;
     position: absolute;
-    filter: drop-shadow(0px 7px 21px white);
-    animation: rotar 5s linear infinite ;
+    filter: drop-shadow(0px 7px 21px #dac549);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .section-footer-logo-base{
     width: 10rem;
     height: 10rem;
     position: absolute;
-    bottom: -94px;
-   
+    bottom: -76px;
     border-radius: 50%;
     box-shadow: inset 0px 0px 10px 10px #11111104;
     transform: rotateX(80deg);
@@ -919,6 +930,7 @@
     filter: blur(30px);
     animation: Animate 1s linear infinite;
 }
+
 @keyframes Animate {
     from{
         width: 4rem;
@@ -934,24 +946,10 @@
     }
 }
 
-@keyframes rotar{
-    from{
-        transform: rotateY(180deg);
-    }
-    to{
-        transform: rotateY(-180deg);
-    }
-}
-
-.section-footer-follow h5{
-    font-size: medium;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-}
-
 .footer-ubicacion{
     display: flex;
 }
+
 
 .footer-redes{
     font-size: 23px;
@@ -1017,7 +1015,7 @@
     height: 50px;
     position: relative;
     color: var(--color-blanco);
-    background-color: var(--color-titulo-innovate);
+    background-color: var(--color-amarillo-paleta-4);
 }
 
 .icon-department i{
@@ -1031,8 +1029,13 @@
 .icon-title a{
     text-decoration: none;
     font-family: "Gafata", sans-serif;
-    color: var(--innovate-anaranjado);
+    color: var(--color-amarillo-paleta-5);
 }
+
+.icon-title a:hover{
+    color: var(--color-amarillo-paleta-3);
+}
+
 
 
 @media (max-width: 1200px) {
