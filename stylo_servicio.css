@@ -557,7 +557,8 @@
 /* Sección 02 - linea de tiempo */
 
 .section-timeline{
-    height: 180vh;
+    /* height: 180vh; */
+    height: 100%;
 }
 
 .section-timeline-content {
@@ -1161,7 +1162,8 @@
     /* ------------------------------------------------------------------ */
     /* Timeline version para movil */
     .section-timeline{
-        height: 290vh;
+        /* height: 290vh; */
+        height: 100%;
         transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
