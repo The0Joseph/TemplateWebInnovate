@@ -480,9 +480,12 @@
     box-shadow: var(--color-amarillo-paleta-0) 0px 4px 12px;
 }
 
- .card-expandible-item-column-1:nth-child(1) {
-    background-color: var(--color-amarillo-paleta-0);
-}
+
+/* .card-expandible-item-column-1:nth-child(1) {
+   background-color: var(--color-amarillo-paleta-0);
+} */
+
+
 
 .card-expandible-item-column-2{
     display: flex;
