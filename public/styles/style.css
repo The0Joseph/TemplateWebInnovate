@@ -628,12 +628,16 @@
     width: 100%;
     background-color: rgba(88, 82, 82, 0.13);
     margin-top: 10px;
-    background: #00000069; 
+    /* #00000069 */
+    background: var(--color-amarillo-paleta-3); 
     backdrop-filter: blur(1px);
-    box-shadow: 0px 0px 9px #2c2c2c40;
+    /* #2c2c2c40 */
+    box-shadow: 0px 0px 9px var(--color-amarillo-paleta-3);
     color: white;
     text-align: right;
-    font-weight: 100;
+    font-weight: 400;
+    padding: 10px 20px 10px 0; 
+    font-size: 23px;
 }
 
     /*Imagen cortada en diagonal*/
@@ -767,6 +771,9 @@
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
+    color: var(--color-amarillo-paleta-5);
+}
+.section-contact-text-02{
     color: var(--color-amarillo-paleta-5);
 }
 
