@@ -354,7 +354,7 @@
 }
 
 .section-presentation-bg .resume{
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 90px;
     font-family: "AR One Sans", sans-serif;
 }
@@ -456,6 +456,7 @@
     display: flex;
     flex-wrap: nowrap;
     height: 100%;
+    color: var(--color-amarillo-paleta-6);
 }
 
 .card-expandible-item > .card-expandible-item-row > .card-expandible-item-icon{
@@ -476,7 +477,7 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    /* background-color: var(--color-amarillo-paleta-0); */
+    box-shadow: var(--color-amarillo-paleta-0) 0px 4px 12px;
 }
 
  .card-expandible-item-column-1:nth-child(1) {
@@ -513,7 +514,7 @@
 
 .card-expandible-content-horizontal{
     background-color: #0e76a8;
-    margin-right: 19px;
+    margin-right: 3px;
     border-radius: 0.70rem;
     cursor: default;
 }
@@ -851,13 +852,11 @@
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección footer */
-
 .section-footer{
     height: 50vh;
     width: 100%;
     background-color: var(--color-amarillo-paleta-1);
 }
-
 .section-footer-learn p{
     font-size: 0.9rem;
 }
@@ -961,54 +960,17 @@
     height: 50px;
     text-align: center;
     transition-duration: 0.4s;
-}
-        /* Red social de Facebook */
-.footer-redes .red-facebook{
     border-radius: 10px;
-    border: var(--color-facebook) 1px solid;
-    color: var(--color-facebook);
-    
+    border: var(--color-amarillo-paleta-4) 1px solid;
+    color: var(--color-amarillo-paleta-4);
 }
-.footer-redes .red-facebook:hover{
+
+.footer-redes a:hover{
     color: var(--color-blanco);
-    background-color: var(--color-facebook);
+    background-color: var(--color-amarillo-paleta-5);
+    border: var(--color-amarillo-paleta-4) 1px solid;
 }
 
-        /* Red social de Linkedin */
-.footer-redes .red-linkedin{
-    border-radius: 10px;
-    border: var(--color-linkedin) 1px solid;
-    color: var(--color-linkedin);
-}
-
-.footer-redes .red-linkedin:hover{
-    color: var(--color-blanco);
-    background-color: var(--color-linkedin);
-}
-
-        /* Red social de Telegram */
-.footer-redes .red-telegram{
-    border-radius: 10px;
-    border: var(--color-telegram) 1px solid;
-    color: var(--color-telegram);
-}
-
-.footer-redes .red-telegram:hover{
-    color: var(--color-blanco);
-    background-color: var(--color-telegram);
-}
-
-        /* Red social de Whatsapp */
-.footer-redes .red-whatsapp{
-    border-radius: 10px;
-    border: var(--color-whatsapp) 1px solid;
-    color: var(--color-whatsapp);
-}
-
-.footer-redes .red-whatsapp:hover{
-    color: var(--color-blanco);
-    background-color: var(--color-whatsapp);
-}
 
 .icon-department{
     width: 50px;
@@ -1035,7 +997,6 @@
 .icon-title a:hover{
     color: var(--color-amarillo-paleta-3);
 }
-
 
 
 @media (max-width: 1200px) {
@@ -1065,7 +1026,7 @@
     }
 
     .section-presentation-bg h1{
-        top: 40%;
+        top: 45%;
     }
     .section-service-container{
         gap: 0px;
@@ -1109,24 +1070,25 @@
     }
 
     .card-expandible-item-column-1 {
-        width: 160px;
+        width: 175px;
+        
     }
 
 
 
     .card-expandible-item-column-2{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .card-expandible-item-column-2 h5{
         font-size: 0.9em;
     }
     .card-expandible-item-column-2 p{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .section-card-expandible-content .container input:checked + label {
-        width: 390px;
+        width: 350px;
     }
 
     /* Timeline version para movil */
@@ -1176,7 +1138,7 @@
     }
     /* ------- */
     .section-presentation-bg div{
-        top: 53%;
+        top: 45%;
     }
     /* ------- */
     .section-presentation-img img{
