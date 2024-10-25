@@ -309,7 +309,7 @@
 
 /* Presentación */
 .parallax {
-    background-image: url('/img/home/contactar.jpg');
+    background-image: url('/public/img/home/contactar.jpg');
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -479,7 +479,7 @@
 }
 .section-feature-card-img::before,
 .section-feature-card-img h4::after{
-    content: url("img/iconos/flecha-derecha.png");
+    content: url("/public/img/iconos/flecha-derecha.png");
     position: absolute;
     z-index: 10;
     bottom: 50px;
@@ -642,7 +642,7 @@
     position: absolute;
     width: 390px; /* Ajusta el tamaño según lo necesites */
     height: 100%;
-    background-image: url('img/home/IA02.jpg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
+    background-image: url('/public/img/home/IA02.jpg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
     background-size: cover;
     background-position: center;
     clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%, 0% 100%);
@@ -651,19 +651,19 @@
 }
 
 .custom-shape-img-01{
-    background-image: url('img/home/Inteligencia-artificial.svg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
+    background-image: url('/public/img/home/Inteligencia-artificial.svg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
 }
 .custom-shape-img-02{
-    background-image: url('img/home/servicio-nube.svg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
+    background-image: url('/public/img/home/servicio-nube.svg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
 }
 .custom-shape-img-03{
-    background-image: url('img/home/servicio-seguridad.svg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
+    background-image: url('/public/img/home/servicio-seguridad.svg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
 }
 .custom-shape-img-04{
-    background-image: url('img/home/servicio-desarrollo-softwware.svg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
+    background-image: url('/public/img/home/servicio-desarrollo-softwware.svg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
 }
 .custom-shape-img-05{
-    background-image: url('img/home/consultoria-tecnologia.svg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
+    background-image: url('/public/img/home/consultoria-tecnologia.svg'); /* Asegúrate de cambiar esto por la ruta de tu imagen */
 }
 
 .texto{
@@ -760,13 +760,16 @@
     font-size: 13px;
 }
 
+.content-clients{
+    transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .content-clients h2{
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     color: var(--color-amarillo-paleta-5);
 }
-
 
 
 .content-clients img{
@@ -790,11 +793,11 @@
     border-width: 0 0 1px 0;
 }
 
-.content-clients > article:last-of-type div{
+#content-clients_id > article:last-of-type div{
     border-width: 0 1px 0 0;
 }
 
-.content-clients > article:last-of-type div:last-child{
+#content-clients_id > article:last-of-type div:last-child{
     border-width: 0 0 0 0;
 }
 
@@ -944,7 +947,7 @@
 .section-footer-logo img{
     text-align: center;
     width: 100px;
-    background: url("img/logo.png");
+    background: url("/public/img/logo.png");
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -1008,54 +1011,17 @@
     height: 50px;
     text-align: center;
     transition-duration: 0.4s;
-}
-        /* Red social de Facebook */
-.footer-redes .red-facebook{
     border-radius: 10px;
-    border: var(--color-facebook) 1px solid;
-    color: var(--color-facebook);
-    
+    border: var(--color-amarillo-paleta-4) 1px solid;
+    color: var(--color-amarillo-paleta-4);
 }
-.footer-redes .red-facebook:hover{
+
+.footer-redes a:hover{
     color: var(--color-blanco);
-    background-color: var(--color-facebook);
+    background-color: var(--color-amarillo-paleta-5);
+    border: var(--color-amarillo-paleta-4) 1px solid;
 }
 
-        /* Red social de Linkedin */
-.footer-redes .red-linkedin{
-    border-radius: 10px;
-    border: var(--color-linkedin) 1px solid;
-    color: var(--color-linkedin);
-}
-
-.footer-redes .red-linkedin:hover{
-    color: var(--color-blanco);
-    background-color: var(--color-linkedin);
-}
-
-        /* Red social de Telegram */
-.footer-redes .red-telegram{
-    border-radius: 10px;
-    border: var(--color-telegram) 1px solid;
-    color: var(--color-telegram);
-}
-
-.footer-redes .red-telegram:hover{
-    color: var(--color-blanco);
-    background-color: var(--color-telegram);
-}
-
-        /* Red social de Whatsapp */
-.footer-redes .red-whatsapp{
-    border-radius: 10px;
-    border: var(--color-whatsapp) 1px solid;
-    color: var(--color-whatsapp);
-}
-
-.footer-redes .red-whatsapp:hover{
-    color: var(--color-blanco);
-    background-color: var(--color-whatsapp);
-}
 
 .icon-department{
     width: 50px;
@@ -1192,12 +1158,14 @@
         border-width: 0 0 1px 0;
     }
 
-    .content-clients > article:last-of-type div{
-        border-width: 0 1px 1px 0;
+    /* (odd): Para los elementos impares (1, 3, 5, ...) */
+    #content-clients_id > article:last-of-type div:nth-child(odd){
+        border-width: 1px 1px 0px 0;
     }
     
-    .content-clients > article:last-of-type div:last-child{
-        border-width: 0 0 0 0;
+    /* (even): Para los elementos pares (2, 4, 6, ...) */
+    #content-clients_id > article:last-of-type div:nth-child(even){
+        border-width: 1px 0 0px 0;
     }
 
     /* Capacidades tecnologicas version movil */

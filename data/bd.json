@@ -1,0 +1,65 @@
+{
+
+    "h_clientes": [
+        {
+            "ruta": "/public/img/clientes-png/1.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/2.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/3.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/4.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/5.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/6.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/7.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/8.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/9.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/10.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/11.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/12.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/13.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/14.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/15.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/16.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/17.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/18.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/19.png"
+        },
+        {
+            "ruta": "/public/img/clientes-png/20.png"
+        }
+    ]
+}

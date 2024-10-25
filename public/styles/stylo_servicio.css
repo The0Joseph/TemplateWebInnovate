@@ -308,7 +308,7 @@
 
 /* Presentación */
 .parallax {
-    background-image: url('/img/home/contactar.jpg');
+    background-image: url('/public/img/home/contactar.jpg');
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -897,7 +897,7 @@
 .section-footer-logo img{
     text-align: center;
     width: 100px;
-    background: url("img/logo.png");
+    background: url("/public/img/logo.png");
     background-position: center;
     background-size: cover;
     position: absolute;
