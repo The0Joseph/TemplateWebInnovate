@@ -781,6 +781,10 @@
     
 }
 
+.section-contact-text-02{
+    color: var(--color-amarillo-paleta-5);
+}
+
 .section-contact-icon{
     width: 70px;
     height: 70px;
