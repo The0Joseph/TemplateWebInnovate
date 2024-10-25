@@ -99,37 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 $(document).ready(function(){
-    $('.section-presentation-img').slick({
-        autoplay: true,
-        autoplaySpeed: 300,
-        speed: 900,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: true,
-        dots: false,
-        infinite: true, 
-        responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 2
-              }
-            }
-          ]
-    });
+    
 
     $('.card-slick').slick({
         slidesToShow: 2,
