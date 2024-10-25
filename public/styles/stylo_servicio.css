@@ -481,9 +481,9 @@
 }
 
 
-/* .card-expandible-item-column-1:nth-child(1) {
+.card-expandible-item-column-1:nth-child(1) {
    background-color: var(--color-amarillo-paleta-0);
-} */
+}
 
 
 
