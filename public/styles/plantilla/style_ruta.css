@@ -29,3 +29,11 @@
 .seccion-path ul, li, a:hover{
     color: var(--color-amarillo-paleta-2);
 }
+
+@media (max-width: 768px) {
+    .seccion-path ul, li, a{
+        font-size: 11px;
+    }
+
+
+}
