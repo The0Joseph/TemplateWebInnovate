@@ -1,0 +1,96 @@
+
+/* section contact */
+.parallax {
+    background-image: url('/public/img/home/contactar.jpg');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-contact-text-02{
+    color: var(--color-amarillo-paleta-5);
+}
+
+.section-contact{
+    height: 100vh;
+}
+
+.section-contact h3{
+    color: var(--color-blanco);
+}
+
+.section-contact-content-icons{
+    position: relative;
+    
+}
+
+.section-contact-icon{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    margin: 0 10px;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.section-contact-icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+    transition: all 0.4s ease;
+}
+
+.icon-whatsapp .icon-title,
+.icon-email .icon-title
+{
+    position: absolute;
+    right: 90%;
+    width: 0%;
+    opacity: 0;
+}
+
+
+.icon-whatsapp:hover i{
+    left: 75%;
+}
+
+.icon-whatsapp{
+    color: var(--color-blanco);
+    background-color: var(--color-whatsapp);
+}
+
+.icon-whatsapp:hover,
+.icon-email:hover{
+    width: 150px;
+    text-align: center;
+    transition-duration: .3s;
+}
+
+.icon-whatsapp:hover .icon-title{
+    opacity: 1;
+    color: white;
+}
+
+.icon-email{
+    background-color: var(--color-blanco);
+    color: black;
+}
+
+.icon-email .icon-title{
+    left: 50%;
+}
+
+.icon-email:hover .icon-title{
+    opacity: 1;
+}
+
+.icon-email:hover i{
+    left: 30%;
+}
+

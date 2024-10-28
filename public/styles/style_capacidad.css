@@ -415,6 +415,7 @@
     max-width: 300px;
     object-fit: cover; /* Define un ancho máximo para las imágenes */
 }
+
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección ubicación de la página */
 .seccion-path{
@@ -897,8 +898,6 @@
     }
 
 
-    /* Capacidades tecnologicas version movil */
-    
 }
 
 @media (max-width: 576px) {

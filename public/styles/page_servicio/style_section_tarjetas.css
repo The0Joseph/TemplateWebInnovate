@@ -1,0 +1,84 @@
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Sección 03 - tarjetas */
+
+.section-card{
+    height: 100vh;
+    position: relative;
+}
+
+.section-card  h2{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: var(--color-amarillo-paleta-5);
+}
+
+.card-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container  .card-wraper{
+    width: 236px;
+    height: 236px;
+    display: block;
+    margin: 10px;
+    transition: 400ms;
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+
+.card-wraper div{
+    height: 86px;
+    background-color: var(--color-amarillo-paleta-1);
+    border-radius: 0 0 10px 10px;
+}
+
+
+.card-wraper h5{
+    width: 100%;
+    padding-top: 10px;
+    font-size: 1.3em;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: var(--color-amarillo-paleta-5);
+}
+
+.card-wraper p{
+    font-size: 0.9em;
+    margin: 10px;
+}
+
+.card-wraper:hover{
+    transform: scale(1.05);
+}
+
+.slick-prev{
+    color: black !important;
+}
+.slick-prev:before, .slick-next:before{
+    color: var(--innovate-amarillo) !important;
+    
+}
+ 
+
+@media (max-width: 768px) {
+
+    /* ------------------------------------------------------- */
+    /* Sección 03 - card  */
+    .slick-prev {
+        left: -3px !important;
+        z-index: 99;
+    }
+
+    .slick-next {
+        right: -3px !important;
+    }
+
+}

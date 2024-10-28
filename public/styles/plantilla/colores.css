@@ -1,0 +1,26 @@
+:root{
+    --innovate-rojo: #B31C21;
+    --innovate-anaranjado: #F36920;
+    --innovate-amarillo: #F8DF05;
+    --color-blanco: #ffffff;
+    --color-lightgray: lightgray;
+    --color-gray: gray;
+    
+    --color-navbar: #DDD273; 
+    --color-nav-tecnologia: #6e99e2;
+    --color-nav-service: #F07937;
+    --color-titulo-innovate: #AFA01E;
+    
+    --color-whatsapp: #25D366;
+    --color-facebook: #2050b3;
+    --color-linkedin: #0e76a8;
+    --color-telegram: #24A1DE;
+
+    --color-amarillo-paleta-0: #F8F3A8;
+    --color-amarillo-paleta-1: #fff67c;
+    --color-amarillo-paleta-2: #ecdd62;
+    --color-amarillo-paleta-3: #dac549;
+    --color-amarillo-paleta-4: #c7ac2f;
+    --color-amarillo-paleta-5: #b49315;
+    --color-amarillo-paleta-6: #816D22;
+}

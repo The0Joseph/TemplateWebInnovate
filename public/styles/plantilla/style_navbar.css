@@ -1,0 +1,265 @@
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Navbar */
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 19px 0;
+    transition: top 0.3s ease, background-color 0.3s ease;
+}
+#navbar:hover{
+    background-color: var(--color-navbar);
+}
+
+.section-service .section-service-title{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: var(--color-amarillo-paleta-5);
+}
+
+.navbar-hidden {
+    top: -100px !important; /* Ajusta según la altura de tu navbar */
+}
+
+.navbar-visible {
+    top: 0 !important;
+    background-color: var(--color-navbar);
+}
+
+.navbar-transparent {
+    background-color: transparent;
+}
+
+.navbar-nav .nav-link{
+    font-size: 16px;
+    font-family: "Aboreto", system-ui;
+    font-weight: 900;
+}
+
+.navbar-toggler:focus{
+    outline: #ffffff solid 1px;
+    outline-offset: none;
+    
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    position: relative;
+    
+}
+
+.navbar-nav .nav-link::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    opacity: 0;
+    background-color: var(--color-titulo-innovate);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-titulo-innovate);
+}
+
+.navbar-nav .nav-link:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active{
+    color: var(--color-titulo-innovate);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--color-titulo-innovate);
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 69%;
+}
+
+.navbar-nav .dropdown-menu{
+     width: 100vw;
+     left: 50%;
+     transform: translate(-50%, -1px);
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+    
+} 
+
+.navbar-toggler{
+    border: #ffffff solid 2px;
+    
+}
+
+.navbar-toggler span{
+    color: #ffffff;
+}
+
+        /* Nav Qué Ofrecemos */
+.dropdown-item-ofrecemos ul{
+    padding: 0;
+    margin: 0;
+}
+.dropdown-item-ofrecemos ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+.dropdown-item-ofrecemos ul li a{
+    text-decoration: none;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 100;
+    color: var(--color-gray);
+    font-size: 14px;
+}
+.dropdown-item-ofrecemos ul li a:hover{
+    font-weight: 900;
+}
+
+.col-capacity-technology,
+.col-service{
+    display: block;
+}
+
+.col-capacity-technology header,
+.col-service header{
+    display: inline-block;
+    position: relative;
+}
+
+.logo-capacity-technology,
+.logo-service{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.logo-capacity-technology::before,
+.logo-service::before{
+    content: '';
+    display: inline-block;
+
+}
+
+.logo-capacity-technology svg,
+.logo-service svg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    padding: 4px; 
+    background-color: lightgrey;
+    border-radius: 20%; 
+    color: var(--color-blanco);
+}
+.logo-capacity-technology svg{
+    background-color: var(--color-nav-tecnologia);
+}
+.logo-service svg{
+    background-color: var(--color-nav-service);
+}
+
+
+.nav-capacity-technology,
+.nav-service{
+    position: relative;
+    display: block;
+}
+
+.nav-capacity-technology::before,
+.nav-service::before{
+    content: '';
+    width: 2px;
+    display: inline-block;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    bottom: 10px;
+    background-color: lightgrey;
+}
+
+.nav-capacity-technology::before{
+    background-color: var(--color-nav-tecnologia);
+}
+.nav-service::before{
+    background-color: var(--color-nav-service);
+}
+
+.nav-capacity-technology,
+.nav-service
+{
+    margin-left: 50px;
+}
+
+.col-capacity-technology header p,
+.col-service header p{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.nav-capacity-technology ul,
+.nav-service ul{
+    padding: 0px 0px 0 15px;
+}
+
+.nav-capacity-technology ul li a:hover::before,
+.nav-service ul li a:hover::before{
+    visibility: visible;
+}
+
+.nav-capacity-technology ul li a::before,
+.nav-service ul li a::before{
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: relative;
+    display: inline-block;
+    left: -47px;
+    visibility: hidden;
+}
+.nav-capacity-technology ul li a::before{
+    box-shadow: var(--color-nav-tecnologia) 0px 0px 8px;
+    background-color: var(--color-nav-tecnologia);
+}
+.nav-service ul li a::before{
+    box-shadow: var(--color-nav-service) 0px 0px 8px;
+    background-color: var(--color-nav-service);
+}
+/*  */
+
+@media (max-width: 992px) {
+    .navbar-nav .dropdown-menu{
+        width: 100%;
+        position: relative;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu {
+        display: none;
+        margin-top: 0;
+    }   
+      
+    .navbar .dropdown-menu.show {
+        display: block !important; /* Lo muestra cuando tiene la clase .show */
+    }
+
+}

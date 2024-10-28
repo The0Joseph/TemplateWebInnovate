@@ -1,0 +1,31 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Sección ubicación de la página */
+.seccion-path{
+    width: 100%;
+   margin-top: 30px;
+   padding: 0;
+   color: var(--color-amarillo-paleta-0);
+}
+
+.seccion-path ul, li {
+    list-style: none;
+    margin: 0 10px;
+}
+.seccion-path ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.seccion-path ul, li, a{
+    text-decoration: none;
+    color: var(--color-amarillo-paleta-3);
+}
+
+.seccion-path ul, li, a.active{
+    color: var(--color-amarillo-paleta-6);
+    font-weight: 600;
+}
+
+.seccion-path ul, li, a:hover{
+    color: var(--color-amarillo-paleta-2);
+}

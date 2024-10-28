@@ -1,0 +1,184 @@
+
+/* Carecteriscas */
+.fondo-svg{
+    fill: var(--color-amarillo-paleta-1) !important;
+}
+
+.section-feature{
+    position: relative;
+}
+
+.section-feature h2{
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: var(--color-amarillo-paleta-5);
+}
+
+.section-feature-card{
+    top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.section-feature-card:nth-child(4n+1){
+    position: relative;
+}
+.section-feature-card:nth-child(4n+2){
+    position: relative;
+    top: 2rem;
+}
+.section-feature-card:nth-child(4n+3){
+    position: relative;
+    top: 4rem;
+}
+.section-feature-card:nth-child(4n+4){
+    position: relative;
+    top: 6rem;
+}
+
+
+.section-feature-card .section-feature-card-img h4{
+    position: absolute;
+    width: 260px;
+    font-family: "Reddit Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-top: 27px;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: var(--color-amarillo-paleta-4);
+    padding: 10px 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+    backdrop-filter: blur(19px);
+    color: white;
+    box-shadow: 0px 1px 6px 2px var(--color-amarillo-paleta-4);
+}
+
+.section-feature-card-img{
+    width: 100%;
+}
+
+.section-feature-card-img img{
+    height: 260px;
+    width: 260px;
+    max-width: 100%;
+    object-fit: cover;
+    transition: all 0.1s ease;
+    box-shadow: 0px 1px 12px 5px #d9d8cea8;
+    border-radius: 5px;
+}
+.section-feature-card-img::before,
+.section-feature-card-img h4::after{
+    content: url("/public/img/iconos/flecha-derecha.png");
+    position: absolute;
+    z-index: 10;
+    bottom: 50px;
+    right: -30px;
+    visibility: hidden;
+    transition: all 0.1s ease;
+}
+
+.section-feature-card-img h4::after{
+    bottom: 20px;
+    right: 0px;
+}
+
+
+.section-feature-card-img:hover::before{
+    transform: scale(1.1);
+    visibility: visible;
+    right: 10px;
+}
+
+.section-feature-card-img img:hover{
+    transform: scale(1);
+    mask-image: linear-gradient(black 60%, transparent);
+}
+
+.section-feature-card-img:hover h4 {
+    visibility: visible;
+    bottom: 0;
+    opacity: 1;
+}
+
+.section-feature-card h4,
+.section-feature-card p
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-feature-card .info-more-link{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1142px){
+
+    /* Sección capacidades tecnológicas para movil */
+    .section-feature-card-img img{
+        height: 190px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    /* Sección capacidades tecnológicas para movil */
+    .section-feature-card-img img{
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* Capacidades tecnologicas version movil */
+    .section-feature-card-img img{
+        height: 260px;
+    }    
+
+    .section-feature-card-img::before{
+        right: 140px;
+        visibility: hidden;
+    }
+    .section-feature-card-img h4::after{
+        visibility: visible;
+    }
+    .section-feature-card-img:hover::before{
+        right: 135px;
+        visibility: hidden;
+    }
+    .section-feature-card .section-feature-card-img h4{
+        opacity: 1;
+        bottom: 0px;
+        visibility: visible;
+    }
+
+    .section-feature-card-img img{
+        transform: scale(1);
+        mask-image: linear-gradient(black 60%, transparent);
+    }
+    
+    .section-feature-card:nth-child(4n+2){
+        position: relative;
+        top: 0rem;
+    }
+    .section-feature-card:nth-child(4n+3){
+        position: relative;
+        top: 0rem;
+    }
+    .section-feature-card:nth-child(4n+4){
+        position: relative;
+        top: 0rem;
+    }
+
+}
