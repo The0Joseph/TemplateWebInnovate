@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="/public/img/logo.ico" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/styles/style.css">
+    <link rel="stylesheet" href="/public/styles/style_capacidad.css">
+
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -31,7 +32,7 @@
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="index.html">
+            <a class="navbar-brand ms-5" href="/index.html">
                 <img src="/public/img/logo.png" alt="Logo de Innovate" width="80">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,324 +123,43 @@
                 Brindamos soluciones tecnológicas personalizadas para optimizar procesos y mejorar el rendimiento empresarial, desde consultoría hasta desarrollo de software e inteligencia artificial.
             </div>
         </div> 
-        <div class="section-presentation-clients">
-            <div class="section-presentation-clientes-content">
-                <h5>Nuestros Clientes</h5>
-                <div id="clients-slider-id" class="section-presentation-img">
-                    <!--<img src="/public/img/clientes-png/1.png" alt="">
-                    <img src="/public/img/clientes-png/2.png" alt="">
-                    <img src="/public/img/clientes-png/3.png" alt="">
-                    <img src="/public/img/clientes-png/4.png" alt="">
-                    <img src="/public/img/clientes-png/5.png" alt="">
-                    <img src="/public/img/clientes-png/6.png" alt="">
-                    <img src="/public/img/clientes-png/7.png" alt="">
-                    <img src="/public/img/clientes-png/8.png" alt="">
-                    <img src="/public/img/clientes-png/9.png" alt="">
-                    <img src="/public/img/clientes-png/10.png" alt="">
-                    <img src="/public/img/clientes-png/11.png" alt="">
-                    <img src="/public/img/clientes-png/12.png" alt="">
-                    <img src="/public/img/clientes-png/13.png" alt="">
-                    <img src="/public/img/clientes-png/14.png" alt="">
-                    <img src="/public/img/clientes-png/15.png" alt="">
-                    <img src="/public/img/clientes-png/16.png" alt="">
-                    <img src="/public/img/clientes-png/17.png" alt="">
-                    <img src="/public/img/clientes-png/18.png" alt="">
-                    <img src="/public/img/clientes-png/19.png" alt="">
-                    <img src="/public/img/clientes-png/20.png" alt=""> -->
-                </div>     
-            </div>
-        </div>
     </section>
     
-    <!-- Servicios -->
-    <section class="section-service">
-        <!-- Backgraound -->
-        <div class="section-service-bg" style="overflow: hidden;">
-            <svg
-              preserveAspectRatio="none"
-              viewBox="0 0 1200 120"
-              xmlns="http://www.w3.org/2000/svg"
-              class="fondo-svg"
-              style="fill: #DDD273; width: 400%; height: 600px; transform: rotate(180deg) scaleX(-1);"
-            >
-              <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
-            </svg>
-        </div>
-        <!-- contenido de servicios -->
-        <div class="container">
-            <h2 class="py-5 section-service-title">Nuestros Servicios</h2>
-            <div class="section-service-container">
-                <div class="section-service-sidebar">
-                    <ul class="menu-item">
-                        <li class="item" data-content="option01">
-                            <div class="item-title">
-                                <div class="ms-4">
-                                    <i class="fa-solid fa-brain"></i>
-                                </div>
-                                <h5>Servicios de IA y Aprendizaje Automático </h5>
-                            </div>
-                        </li>
-                        <div id="option01-content" class="item-accordion-content">
-                            <!-- <h2>Servicios de Inteligencia Artificial y Aprendizaje Automático</h2> -->
-                            <ul class="">
-                                <li><a href="/pages/servicio.html">¿Qué Abarcan Nuestros Servicios de IA y ML?</a></li>
-                                <li><a href="#">Nuestro Enfoque</a></li>
-                                <li><a href="#">¿Por Qué Elegirnos para sus Proyectos de IA y ML?</a></li>
-                                <li><a href="#">Solicite una Consulta Gratuita para Explorar las Posibilidades de IA en su Negocio</a></li>
-                            </ul>
-                            <div class="text-center mt-4" >
-                                <a class="stretched-link" href="#">Más información <span><i class="fa-solid fa-arrow-right ms-1"></i></span></a>
-                            </div>
-                        </div>
-                        <li class="item" data-content="option02">
-                            <div class="item-title">
-                                <div class="ms-4">
-                                    <i class="fa-solid fa-cloud"></i>
-                                </div>
-                                <h5>Servicios en la Nube</h5>
-                            </div>
-                        </li>
-                        <div id="option02-content" class="item-accordion-content">
-                            <!-- <h2>Servicios en la Nube</h2> -->
-                            <ul class="">
-                                <li><a href="#">¿Qué Abarcan Nuestros Servicios en la Nube?</a></li>
-                                <li><a href="#">Nuestro Enfoque</a></li>
-                                <li><a href="#">¿Por Qué Elegirnos para sus Servicios en la Nube?</a></li>
-                                <li><a href="#">Solicite una Consulta Gratuita para sus Proyectos en la Nube</a></li>
-                            </ul>
-                            <div class="text-center mt-4" >
-                                <a class="stretched-link" href="#">Más información <span><i class="fa-solid fa-arrow-right ms-1"></i></span></a>
-                            </div>
-                        </div>
-                        <li class="item" data-content="option03">
-                            <div class="item-title">
-                                <div class="ms-4">
-                                    <i class="fa-solid fa-lock"></i>
-                                </div>
-                                <h5>Servicios de Ciberseguridad</h5>
-                            </div>
-                        </li>
-                        <div id="option03-content" class="item-accordion-content">
-                            <!-- <h2>Servicios de Ciberseguridad</h2> -->
-                            <ul class="">
-                                <li><a href="#">¿Qué Abarcan Nuestros Servicios de Ciberseguridad?</a></li>
-                                <li><a href="#">Nuestro Enfoque</a></li>
-                                <li><a href="#">¿Por Qué Elegirnos para sus Servicios de Ciberseguridad?</a></li>
-                                <li><a href="#">Solicite una Evaluación de Seguridad Gratuita</a></li>
-                            </ul>
-                            <div class="text-center mt-4" >
-                                <a class="stretched-link" href="#">Más información <span><i class="fa-solid fa-arrow-right ms-1"></i></span></a>
-                            </div>
-                        </div>
-                        <li class="item" data-content="option04">
-                            <div class="item-title">
-                                <div class="ms-4">
-                                    <i class="fa-solid fa-laptop"></i>
-                                </div>
-                                <h5>Desarrollo de Software a Medida</h5>
-                            </div>
-                        </li>
-                        <div id="option04-content" class="item-accordion-content">
-                            <!-- <h2>Desarrollo de Software a Medida</h2> -->
-                            <ul class="">
-                                <li><a href="#">¿Qué Abarca Nuestro Desarrollo de Software a Medida?</a></li>
-                                <li><a href="#">Nuestro Proceso de Desarrollo</a></li>
-                                <li><a href="#">¿Por Qué Elegirnos para su Desarrollo de Software a Medida?</a></li>
-                                <li><a href="#">Solicite una Consulta Gratuita para su Proyecto de Software</a></li>
-                            </ul>
-                            <div class="text-center mt-4" >
-                                <a class="stretched-link" href="#">Más información <span><i class="fa-solid fa-arrow-right ms-1"></i></span></a>
-                            </div>
-                        </div>
-                        <li class="item" data-content="option05">
-                            <div class="item-title">
-                                <div class="ms-4">
-                                    <i class="fa-solid fa-microchip"></i>
-                                </div>
-                                <h5>Consultoría Tecnológica</h5>
-                            </div>
-                        </li>
-                        <div id="option05-content" class="item-accordion-content">
-                            <!-- <h2>Consultoría Tecnológica</h2> -->
-                            <ul class="">
-                                <li><a href="/pages/servicio.html">Nuestros Servicios de Consultoría Tecnológica en Detalle</a></li>
-                                <li><a href="/pages/servicio.html">¿Por Qué Elegirnos?</a></li>
-                                <li><a href="/pages/servicio.html">Nuestro Proceso de Consultoría</a></li>
-                                <li><a href="/pages/servicio.html">Solicite una Consulta Gratuita</a></li>
-                            </ul>
-                            <div class="text-center mt-4" >
-                                <a class="stretched-link" href="/pages/servicio.html">Más información <span><i class="fa-solid fa-arrow-right ms-1"></i></span></a>
-                            </div>
-                        </div>
-                    </ul>
+    <!-- Sección 01 - Implementación -->
+    <section class="section-implementation container my-5">
+        <h2 class="my-4">Impementación de ERP</h2>
+        <div class="row row-cols-2 align-items-center ">
+            <!-- columna 01 -->
+            <div class="col-12 col-lg-6 px-0 ">
+                <div class="">
+                    <img class="img-fluid rounded" src="/public/img/capacidad/ERP.webp" alt="">
                 </div>
-                <div class="section-service-content">
-                    <div id="option01" class="content-section active">
-                        <div class="custom-shape custom-shape-img-01">
-                        </div>
-                        <h2>Servicios de Inteligencia Artificial y Aprendizaje Automático</h2>
-                        <ul class="texto">
-                            <li><a href="/pages/servicio.html">¿Qué Abarcan Nuestros Servicios de IA y ML?</a></li>
-                            <li><a href="/pages/servicio.html">Nuestro Enfoque</a></li>
-                            <li><a href="/pages/servicio.html">¿Por Qué Elegirnos para sus Proyectos de IA y ML?</a></li>
-                            <li><a href="/pages/servicio.html">Solicite una Consulta Gratuita para Explorar las Posibilidades de IA en su Negocio</a></li>
-                        </ul>
-                    </div>
-                    <div id="option02" class="content-section">
-                        <div class="custom-shape custom-shape-img-02">
-
-                        </div>
-                        <h2>Servicios en la Nube</h2>
-                        <ul class="texto">
-                            <li><a href="#">¿Qué Abarcan Nuestros Servicios en la Nube?</a></li>
-                            <li><a href="#">Nuestro Enfoque</a></li>
-                            <li><a href="#">¿Por Qué Elegirnos para sus Servicios en la Nube?</a></li>
-                            <li><a href="#">Solicite una Consulta Gratuita para sus Proyectos en la Nube</a></li>
-                        </ul>
-                    </div>
-                    <div id="option03" class="content-section">
-                        <div class="custom-shape custom-shape-img-03">
-
-                        </div>
-                        <h2>Servicios de Ciberseguridad</h2>
-                        <ul class="texto">
-                            <li><a href="#">¿Qué Abarcan Nuestros Servicios de Ciberseguridad?</a></li>
-                            <li><a href="#">Nuestro Enfoque</a></li>
-                            <li><a href="#">¿Por Qué Elegirnos para sus Servicios de Ciberseguridad?</a></li>
-                            <li><a href="#">Solicite una Evaluación de Seguridad Gratuita</a></li>
-                        </ul>
-                    </div>
-                    <div id="option04" class="content-section">
-                        <div class="custom-shape custom-shape-img-04">
-
-                        </div>
-                        <h2>Desarrollo de Software a Medida</h2>
-                        <ul class="texto">
-                            <li><a href="#">¿Qué Abarca Nuestro Desarrollo de Software a Medida?</a></li>
-                            <li><a href="#">Nuestro Proceso de Desarrollo</a></li>
-                            <li><a href="#">¿Por Qué Elegirnos para su Desarrollo de Software a Medida?</a></li>
-                            <li><a href="#">Solicite una Consulta Gratuita para su Proyecto de Software</a></li>
-                        </ul>
-                    </div>
-                    <div id="option05" class="content-section">
-                        <div class="custom-shape custom-shape-img-05">
-
-                        </div>
-                        <h2>Consultoría Tecnológica</h2>
-                        <ul class="texto">
-                            <li><a href="#">Nuestros Servicios de Consultoría Tecnológica en Detalle</a></li>
-                            <li><a href="#">¿Por Qué Elegirnos?</a></li>
-                            <li><a href="#">Nuestro Proceso de Consultoría</a></li>
-                            <li><a href="#">Solicite una Consulta Gratuita</a></li>
-                        </ul>
-                    </div>
+            </div>
+            <!-- columna 02 -->
+            <div class="col-12 col-lg-6">
+                <div class="mt-4 section-implementation-description">
+                    <p>En INNOVATE, entendemos que una gestión eficiente de los recursos empresariales es clave para el éxito y crecimiento sostenido. Nuestra solución de Enterprise Resource Planning (ERP) está diseñada para integrar y optimizar todos los procesos empresariales dentro de un sistema unificado, facilitando la toma de decisiones basada en datos precisos y en tiempo real.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Capacidades Tecnológicas -->
-    <section class="section-feature">
-        <!-- Background -->
-        <div class="section-feature-bg" style="overflow: hidden;">
-            <svg
-              preserveAspectRatio="none"
-              viewBox="0 0 1200 120"
-              xmlns="http://www.w3.org/2000/svg"
-              class="fondo-svg"
-              style="fill: #DDD273; width: 400%; height: 647px; transform: rotate(0deg) scaleX(-1);"
-            >
-              <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
-            </svg>
+    <!-- Sección 02 - ¿Qué es? -->
+    <section class="section-what-is container my-5">
+        <h2 class="my-4">¿Qué es?</h2>
+        <div class="row row-cols-2 align-items-center px-3 py-4">
+            <!-- columna 01 -->
+            <div class="col-12 col-lg-6 d-flex d-block justify-content-center">
+                <div class="img-what-is-custom-shape">
+                </div>
+            </div>
+            <!-- columna 02 -->
+            <div class="col-12 col-lg-6">
+                <div class="mt-4 mt-lg-0 section-what-is-description">
+                    <p>Enterprise Resource Planning (ERP) es un sistema de software que integra todas las funciones y procesos de una empresa en una única plataforma. Esto incluye áreas como finanzas, recursos humanos, ventas, compras, inventario y producción. El objetivo principal del ERP es mejorar la eficiencia operativa mediante la centralización de la información y la automatización de procesos.</p>
+                </div>
+            </div>
         </div>
-        <!-- Contenedor -->
-        <div class="container py-5">
-            <h2 class="py-5 section-feature-title">Nuestras Capacidades Tecnológicas</h2>
-            <div class="row row-cols-1 row-cols-md-4 section-feature-content">
-                <div class="col section-feature-card">
-                    <a href="/pages/capacidad_tecnologica.html">
-                        <div class="section-feature-card-img">
-                            <img src="/public/img/capacidades/ia.avif" alt="">
-                            <h4>Implementación de IA</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col section-feature-card">
-                    <a href="">
-                        <div class="section-feature-card-img">
-                            <img src="/public/img/capacidades/bpmv2.jpg" alt="">
-                            <h4>Implementación de BPM</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col section-feature-card">
-                    <a href="">
-                        <div class="section-feature-card-img">
-                            <img src="/public/img/capacidades/ERP.jpg" alt="">
-                            <h4>Implementación de ERP</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col section-feature-card">
-                    <a href="">
-                        <div class="section-feature-card-img">
-                            <img src="/public/img/capacidades/cmsv2.jpg" alt="">
-                            <h4>Implementación de CMS</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col section-feature-card">
-                    <a href="">
-                        <div class="section-feature-card-img">
-                            <img src="/public/img/capacidades/ecmv2.jpg" alt="">
-                            <h4>Implementación de ECM</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col section-feature-card">
-                    <a href="">
-                        <div class="section-feature-card-img">
-                            <img src="/public/img/capacidades/crm.jpg" alt="">
-                            <h4>Implementación de CRM</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col section-feature-card">
-                    <a href="">
-                        <div class="section-feature-card-img">
-                            <img src="/public/img/capacidades/inteligenceBiv2.jpg" alt="">
-                            <h4>Implementación de BI</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>  
-        </div>
-    </section>
-
-    <!-- Clientes -->
-    <section  class="content-clients container my-5 position-relative">
-        <h2>Nuestros Clientes</h3>
-
-        <div id="content-clients_id"></div>
-        
-        <!-- Plantilla de card de los clientes  -->
-        <!-- <article class="row row-cols-2 row-cols-lg-4 justify-content-center align-items-center content-clients-img">
-            <div class="col-6 col-md-3 col-lg-3">
-                <img src="img/clientes-png/5.png" alt="">
-            </div>
-            <div class="col-6 col-md-3 col-lg-3">
-                <img src="img/clientes-png/6.png" alt="">
-            </div>
-            <div class="col-6 col-md-3 col-lg-3">
-                <img src="img/clientes-png/7.png" alt="">
-            </div>
-            <div class="col-6 col-md-3 col-lg-3">
-                <img src="img/clientes-png/8.png" alt="">
-            </div>
-        </article> -->
-
-        <button id="btn-more" class="position-absolute top-100 start-50 translate-middle btn-ver-mas"><i class="fa-solid fa-angle-down"></i></button>
-
     </section>
 
     <!-- Contáctanos -->
@@ -529,7 +249,5 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="/public/librerias/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="/public/scripts/script.js"></script>
-<script type="text/javascript" src="/public/scripts/script_home_presentacion.js"></script>
-<script type="text/javascript" src="/public/scripts/script_home_sct_clients.js"></script>
 
 </html>
