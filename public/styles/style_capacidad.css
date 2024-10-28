@@ -411,14 +411,19 @@
     color: var(--color-amarillo-paleta-5);
 }
 
-
 .section-implementation > div{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 0.75rem;
 }
 
 .section-implementation .section-implementation-description{
+    position: relative;
     margin: 40px;
+}
+
+.section-implementation img{
+    position: relative;
+    z-index: 9;
 }
 
 
@@ -434,6 +439,27 @@
     border-radius: 10px 0 0 10px; 
 }
 
+.custom-shape-divider-bottom-1730131385 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+.custom-shape-divider-bottom-1730131385 svg {
+    position: relative;
+    display: block;
+    width: calc(161% + 1.3px);
+    height: 86px;
+}
+
+.custom-shape-divider-bottom-1730131385 .shape-fill {
+    fill: var(--color-amarillo-paleta-1);
+}
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección 02 - Que-es */
@@ -451,6 +477,26 @@
 
 .section-what-is .section-what-is-description{
     margin: 40px;
+}
+
+.custom-shape-divider-bottom-1730132633 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1730132633 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+}
+
+.custom-shape-divider-bottom-1730132633 .shape-fill {
+    fill: var(--color-amarillo-paleta-1);
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
