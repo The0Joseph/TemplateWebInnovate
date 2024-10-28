@@ -307,19 +307,19 @@
 }
 
 /* Presentación */
-.parallax {
-    background-image: url('/public/img/home/contactar.jpg');
-    min-height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .section-presentation{
     position: relative;
 }
 
+/* -------------------------- */
+.section-presentation-bg{
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+/* -------------------------- */
 
 .section-presentation-bg img{
     width: 100%;
@@ -401,6 +401,38 @@
     max-width: 300px;
     object-fit: cover; /* Define un ancho máximo para las imágenes */
 }
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Sección ubicación de la página */
+.seccion-path{
+    width: 100%;
+   margin-top: 30px;
+   padding: 0;
+   color: var(--color-amarillo-paleta-0);
+}
+
+.seccion-path ul, li {
+    list-style: none;
+    margin: 0 10px;
+}
+.seccion-path ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.seccion-path ul, li, a{
+    text-decoration: none;
+    color: var(--color-amarillo-paleta-3);
+}
+
+.seccion-path ul, li, a.active{
+    color: var(--color-amarillo-paleta-6);
+    font-weight: 600;
+}
+
+.seccion-path ul, li, a:hover{
+    color: var(--color-amarillo-paleta-2);
+}
+
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Sección 01 - tarjetas expandibles */
@@ -836,7 +868,14 @@
     color: white;
 }
 
-
+.parallax {
+    background-image: url('/public/img/home/contactar.jpg');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .icon-email{
     background-color: var(--color-blanco);

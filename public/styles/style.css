@@ -773,9 +773,7 @@
     font-weight: 800;
     color: var(--color-amarillo-paleta-5);
 }
-.section-contact-text-02{
-    color: var(--color-amarillo-paleta-5);
-}
+
 
 
 .content-clients img{
@@ -821,6 +819,11 @@
 }
 
 /* section contact */
+
+.section-contact-text-02{
+    color: var(--color-amarillo-paleta-5);
+}
+
 .section-contact{
     height: 100vh;
 }

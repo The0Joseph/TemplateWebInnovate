@@ -307,25 +307,25 @@
     background-color: var(--color-nav-service);
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* Presentación */
-.parallax {
-    background-image: url('/public/img/home/contactar.jpg');
-    min-height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .section-presentation{
     position: relative;
 }
 
+/* -------------------------- */
+.section-presentation-bg{
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+/* -------------------------- */
+
 .section-presentation-bg img{
     width: 100%;
     object-fit: cover;
     filter: brightness(0.5);
-
 }
 
 .section-presentation-bg h1,
@@ -333,10 +333,11 @@
     width: 60%; 
     position: absolute;
     color: aliceblue;
-    top: 50%;
+    top: 75%;
     right: 0%;
     transform: translate(-50%, -50%);
     transition: top 0.5s ease;
+    padding-bottom: 10px;
 }
 
 .section-presentation-bg h1{
@@ -344,6 +345,18 @@
     font-family: "Aboreto", system-ui;
     font-weight: 900;
 }
+
+/* ----------- */
+.section-presentation-bg h1::after{
+    content: '';
+    background: linear-gradient(90deg, rgb(255, 255, 255) 90%, rgba(236,0,0,0) 100%);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+}
+/* ----------- */
 
 .section-presentation-bg div{
     padding: 10px;
@@ -385,6 +398,7 @@
     transition: filter 0.2s ease;
     background-color: var(--color-blanco );
 }
+
 .section-presentation-img img:hover{
     filter: grayscale(0);
     border-bottom: var(--color-lightgray) 1px solid;
@@ -400,6 +414,37 @@
     height: 200px; /* La altura se ajustará automáticamente manteniendo la proporción */
     max-width: 300px;
     object-fit: cover; /* Define un ancho máximo para las imágenes */
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Sección ubicación de la página */
+.seccion-path{
+    width: 100%;
+   margin-top: 30px;
+   padding: 0;
+   color: var(--color-amarillo-paleta-0);
+}
+
+.seccion-path ul, li {
+    list-style: none;
+    margin: 0 10px;
+}
+.seccion-path ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.seccion-path ul, li, a{
+    text-decoration: none;
+    color: var(--color-amarillo-paleta-3);
+}
+
+.seccion-path ul, li, a.active{
+    color: var(--color-amarillo-paleta-6);
+    font-weight: 600;
+}
+
+.seccion-path ul, li, a:hover{
+    color: var(--color-amarillo-paleta-2);
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -425,7 +470,6 @@
     position: relative;
     z-index: 9;
 }
-
 
 .img-what-is-custom-shape {
     position: relative;
@@ -501,6 +545,15 @@
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* section contact */
+.parallax {
+    background-image: url('/public/img/home/contactar.jpg');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .section-contact{
     height: 100vh;
 }
@@ -511,7 +564,6 @@
 
 .section-contact-content-icons{
     position: relative;
-    
 }
 
 .section-contact-icon{
@@ -566,7 +618,9 @@
 }
 
 
-
+.section-contact-text-02{
+    color: var(--color-amarillo-paleta-5);
+}
 
 
 .icon-email{
