@@ -22,6 +22,10 @@
 }
 /* ----------- */
 
+.nav-capacity-technology ul li a.active::before
+{
+    visibility: visible;
+}
 
 @media (max-width: 768px) {
     .section-presentation-bg h1 {
