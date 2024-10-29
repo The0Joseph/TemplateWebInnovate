@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovate</title>
     <link rel="shortcut icon" href="/public/img/logo.ico" type="image/x-icon">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="/public/styles/stylo_servicio.css"> -->
+    <!-- <link rel="stylesheet" href="/public/styles/style_capacidad.css"> -->
 
     <link rel="stylesheet" href="/public/styles/plantilla/colores.css">
     <link rel="stylesheet" href="/public/styles/plantilla/style_navbar.css">
     <link rel="stylesheet" href="/public/styles/plantilla/style_presentacion.css">
     <link rel="stylesheet" href="/public/styles/plantilla/style_ruta.css">
 
-    <link rel="stylesheet" href="/public/styles/page_servicio/style_modificacion_pantilla.css">
-    <link rel="stylesheet" href="/public/styles/page_servicio/style_section_tarj_expandible.css">
-    <link rel="stylesheet" href="/public/styles/page_servicio/style_section_linea_tiempo.css">
-    <link rel="stylesheet" href="/public/styles/page_servicio/style_section_tarjetas.css">
+    <link rel="stylesheet" href="/public/styles/page_capacidad/style_modificacion_pantilla.css">
+    <link rel="stylesheet" href="/public/styles/page_capacidad/style_implementar.css">
+    <link rel="stylesheet" href="/public/styles/page_capacidad/style_que_es.css">
 
     <link rel="stylesheet" href="/public/styles/plantilla/style_contact.css">
     <link rel="stylesheet" href="/public/styles/plantilla/style_clients.css">
@@ -37,18 +37,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
 </head>
 
 <body>
 
-   
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="../index.html">
-                <img src="/public/img/logo-white.png" alt="Logo de Innovate" width="80">
+            <a class="navbar-brand ms-5" href="../../index.html">
+                <img src="/public/img/logo.png" alt="Logo de Innovate" width="80">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-success"></span>
@@ -58,7 +56,7 @@
                 <div class="fw-bold">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item mx-md-3">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
                         </li>
                         <li class="nav-item mx-md-3">
                             <a class="nav-link" aria-current="page" href="#">¿Quiénes somos?</a>
@@ -131,19 +129,15 @@
     
     <!-- Presentación -->
     <section class="section-presentation" >
-        <div class="section-presentation-bg">
+        <div class="section-presentation-bg ">
             <img width="100%" src="/public/img/home/business-people-meeting.jpg" alt="">
-            <h1>En Innovate</h1>
-            <div class="resume">
-                Ofrecemos soluciones avanzadas de IA y ML para transformar datos en insights y automatizar procesos, mejorando la eficiencia y generando valor.
-            </div>
+            <h1>Implementación de IA</h1>
+            <!-- <div class="resume">
+                Brindamos soluciones tecnológicas personalizadas para optimizar procesos y mejorar el rendimiento empresarial, desde consultoría hasta desarrollo de software e inteligencia artificial.
+            </div> -->
         </div> 
-        <div class="section-presentation-clients">
-            <div class="section-presentation-clientes-content">
-            </div>
-        </div>
     </section>
-
+    
     <!-- Sección ubicación de la página -->
     <section class="seccion-path container">
         <ul>
@@ -152,384 +146,68 @@
             </li>
             <i class="fa-solid fa-angle-right"></i>
             <li>
-                <a href="../index.html#section-service">Servicios</a>
+                <a href="../index.html#capacity_technology">Capacidades Tecnológicas</a>
             </li>
             <i class="fa-solid fa-angle-right"></i>
             <li class="">
-                <a class="active" href="">Servicios de IA y Aprendizaje Automático</a>
+                <a class="active" href="">Implementación de IA</a>
             </li>
         </ul>
     </section>
 
-    <!-- Sección 01 - card-expandible-->
-    <section class="section-card-expandible ">
-        <div class="section-card-expandible-title container mt-5">
-            <h2>¿Qué Abarcan Nuestros Servicios de IA y ML?</h2>
-        </div>
-        <div class="section-card-expandible-content">
-            <div class="container">
-                <input type="radio" name="slide" id="c1" checked>
-                <label for="c1" class="card-expandible-item">
-                    <div class="card-expandible-item-row">
-                        <div class="card-expandible-item-column-1">
-                            <div class="card-expandible-content-vertical">Consultoría y Estrategia de IA</div>
-                        </div>
-                        <div class="card-expandible-item-column-2">
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Evaluación de Oportunidades de IA</h5>
-                                <p>Analizamos su negocio para identificar áreas donde la IA puede generar el mayor impacto.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Desarrollo de Hoja de Ruta de IA</h5>
-                                <p>Creamos una estrategia personalizada para la implementación gradual de soluciones de IA en su organización.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Asesoramiento en Ética de IA</h5>
-                                <p>Guiamos la implementación ética de la IA, asegurando transparencia y responsabilidad.</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c2" >
-                <label for="c2" class="card-expandible-item">
-                    <div class="card-expandible-item-row">
-                        <div class="card-expandible-item-column-1">
-                            <div class="card-expandible-content-vertical">Análisis Predictivo y Prescriptivo</div>
-                        </div>
-                        <div class="card-expandible-item-column-2">
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Evaluación de Oportunidades de IA</h5>
-                                <p>Analizamos su negocio para identificar áreas donde la IA puede generar el mayor impacto.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Desarrollo de Hoja de Ruta de IA</h5>
-                                <p>Creamos una estrategia personalizada para la implementación gradual de soluciones de IA en su organización.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Asesoramiento en Ética de IA</h5>
-                                <p>Guiamos la implementación ética de la IA, asegurando transparencia y responsabilidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c3" >
-                <label for="c3" class="card-expandible-item">
-                    <div class="card-expandible-item-row">
-                        <div class="card-expandible-item-column-1">
-                            <div class="card-expandible-content-vertical">Procesamiento del Lenguaje Natural (NLP)</div>
-                        </div>
-                        <div class="card-expandible-item-column-2">
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Evaluación de Oportunidades de IA</h5>
-                                <p>Analizamos su negocio para identificar áreas donde la IA puede generar el mayor impacto.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Desarrollo de Hoja de Ruta de IA</h5>
-                                <p>Creamos una estrategia personalizada para la implementación gradual de soluciones de IA en su organización.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Asesoramiento en Ética de IA</h5>
-                                <p>Guiamos la implementación ética de la IA, asegurando transparencia y responsabilidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c4" >
-                <label for="c4" class="card-expandible-item">
-                    <div class="card-expandible-item-row">
-                        <div class="card-expandible-item-column-1">
-                            <div class="card-expandible-content-vertical">Visión por Computadora</div>
-                        </div>
-                        <div class="card-expandible-item-column-2">
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Evaluación de Oportunidades de IA</h5>
-                                <p>Analizamos su negocio para identificar áreas donde la IA puede generar el mayor impacto.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Desarrollo de Hoja de Ruta de IA</h5>
-                                <p>Creamos una estrategia personalizada para la implementación gradual de soluciones de IA en su organización.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Asesoramiento en Ética de IA</h5>
-                                <p>Guiamos la implementación ética de la IA, asegurando transparencia y responsabilidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c5" >
-                <label for="c5" class="card-expandible-item">
-                    <div class="card-expandible-item-row">
-                        <div class="card-expandible-item-column-1">
-                            <div class="card-expandible-content-vertical">Sistemas de Recomendación</div>
-                        </div>
-                        <div class="card-expandible-item-column-2">
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Evaluación de Oportunidades de IA</h5>
-                                <p>Analizamos su negocio para identificar áreas donde la IA puede generar el mayor impacto.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Desarrollo de Hoja de Ruta de IA</h5>
-                                <p>Creamos una estrategia personalizada para la implementación gradual de soluciones de IA en su organización.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Asesoramiento en Ética de IA</h5>
-                                <p>Guiamos la implementación ética de la IA, asegurando transparencia y responsabilidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c6" >
-                <label for="c6" class="card-expandible-item">
-                    <div class="card-expandible-item-row">
-                        <div class="card-expandible-item-column-1">
-                            <div class="card-expandible-content-vertical">Automatización de Procesos con IA</div>
-                        </div>
-                        <div class="card-expandible-item-column-2">
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Evaluación de Oportunidades de IA</h5>
-                                <p>Analizamos su negocio para identificar áreas donde la IA puede generar el mayor impacto.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Desarrollo de Hoja de Ruta de IA</h5>
-                                <p>Creamos una estrategia personalizada para la implementación gradual de soluciones de IA en su organización.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Asesoramiento en Ética de IA</h5>
-                                <p>Guiamos la implementación ética de la IA, asegurando transparencia y responsabilidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c7" >
-                <label for="c7" class="card-expandible-item">
-                    <div class="card-expandible-item-row">
-                        <div class="card-expandible-item-column-1">
-                            <div class="card-expandible-content-vertical">Big Data y IA</div>
-                        </div>
-                        <div class="card-expandible-item-column-2">
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Evaluación de Oportunidades de IA</h5>
-                                <p>Analizamos su negocio para identificar áreas donde la IA puede generar el mayor impacto.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Desarrollo de Hoja de Ruta de IA</h5>
-                                <p>Creamos una estrategia personalizada para la implementación gradual de soluciones de IA en su organización.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Asesoramiento en Ética de IA</h5>
-                                <p>Guiamos la implementación ética de la IA, asegurando transparencia y responsabilidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c8" >
-                <label for="c8" class="card-expandible-item">
-                    <div class="card-expandible-item-row">
-                        <div class="card-expandible-item-column-1">
-                            <div class="card-expandible-content-vertical">IA en la Nube e IoT</div>
-                        </div>
-                        <div class="card-expandible-item-column-2">
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Evaluación de Oportunidades de IA</h5>
-                                <p>Analizamos su negocio para identificar áreas donde la IA puede generar el mayor impacto.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Desarrollo de Hoja de Ruta de IA</h5>
-                                <p>Creamos una estrategia personalizada para la implementación gradual de soluciones de IA en su organización.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Asesoramiento en Ética de IA</h5>
-                                <p>Guiamos la implementación ética de la IA, asegurando transparencia y responsabilidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c9" >
-                <label for="c9" class="card-expandible-item">
-                    <div class="card-expandible-item-row">
-                        <div class="card-expandible-item-column-1">
-                            <div class="card-expandible-content-vertical">Investigación y Desarrollo en IA</div>
-                        </div>
-                        <div class="card-expandible-item-column-2">
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Evaluación de Oportunidades de IA</h5>
-                                <p>Analizamos su negocio para identificar áreas donde la IA puede generar el mayor impacto.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Desarrollo de Hoja de Ruta de IA</h5>
-                                <p>Creamos una estrategia personalizada para la implementación gradual de soluciones de IA en su organización.</p>
-                            </div>
-                            <div class="card-expandible-content-horizontal">
-                                <h5>Asesoramiento en Ética de IA</h5>
-                                <p>Guiamos la implementación ética de la IA, asegurando transparencia y responsabilidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </label>
-            </div>  
+    <!-- Sección 01 - Implementación -->
+    <section class="section-implementation container my-5">
+        <h2 class="my-4">Implementación de IA</h2>
+        <div class="row row-cols-2 align-items-center flex-column-reverse flex-lg-row position-relative px-0">
+            <!-- columna 01 -->
+            <div class="custom-shape-divider-bottom-1730131385 px-0">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="col-12 col-lg-6 ">
+                <div class="mt-4 section-implementation-description">
+                    <p>En INNOVATE, reconocemos que la Inteligencia Artificial (IA) está revolucionando la forma en que las empresas operan y toman decisiones. Nuestra solución de IA está diseñada para integrar tecnologías avanzadas en los procesos empresariales, impulsando la innovación, la eficiencia y la competitividad.</p>
+                </div>
+            </div>
+            <!-- columna 02 -->
+            <div class="col-12 col-lg-6 px-0 ">
+                <div class="">
+                    <img class="img-fluid rounded" src="/public/img/capacidad/ERP.jpeg" alt="">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Sección 02 - timeline -->
-    <section class="section-timeline container">
-        <div class="section-timeline-title pt-5">
-            <h2>Nuestro Enfoque</h2>
-        </div>
-        <div class="section-timeline-content">
-
-            <div class="section-timeline-wrapper">
-
-                <!-- 1 -->
-                <div class="section-timeline-item">
-                    <article>
-                        <div class="timeline-item-content">
-                            Entendemos a fondo sus desafíos de negocio y objetivos.
-                        </div>
-                        <div class="timeline-item-title">
-                            Descubrimiento
-                        </div>
-                    </article>
-                    <div class="timeline-item-icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="section-timeline-item">
-                    <div class="timeline-item-icon">
-                        <i class="fa-solid fa-compass-drafting"></i>
-                    </div>
-                    <article>
-                        <div class="timeline-item-title">
-                            Diseño de Solución
-                        </div>
-                        <div class="timeline-item-content">
-                            Desarrollamos una solución de IA/ML personalizada que se alinea con sus necesidades específicas.
-                        </div>
-                    </article>                 
-                </div>
-
-                <!-- 3 -->
-                <div class="section-timeline-item">
-                    <article>
-                        <div class="timeline-item-content">
-                            Construimos y desplegamos la solución utilizando metodologías ágiles.
-                        </div>
-                        <div class="timeline-item-title">
-                            Desarrollo e Implementación
-                        </div>
-                    </article>
-                    <div class="timeline-item-icon">
-                        <i class="fa-solid fa-layer-group"></i>
-                    </div>
-                </div>
-
-                <!-- 4 -->
-                <div class="section-timeline-item">
-                    <div class="timeline-item-icon">
-                        <i class="fa-solid fa-list-check"></i>
-                    </div>
-                    <article>
-                        <div class="timeline-item-title">
-                            Pruebas y Refinamiento
-                        </div>
-                        <div class="timeline-item-content">
-                            Realizamos pruebas exhaustivas y refinamos los modelos para asegurar precisión y rendimiento.
-                        </div>
-                    </article>                 
-                </div>
-
-                <!-- 5 -->
-                <div class="section-timeline-item">
-                    <article>
-                        <div class="timeline-item-content">
-                            Implementamos la solución en su entorno y proporcionamos monitoreo continuo.
-                        </div>
-                        <div class="timeline-item-title">
-                            Despliegue y Monitoreo
-                        </div>
-                    </article>
-                    <div class="timeline-item-icon">
-                        <i class="fa-brands fa-watchman-monitoring"></i>
-                    </div>
-                </div>
-
-                <!-- 6 -->
-                <div class="section-timeline-item">
-                    <div class="timeline-item-icon">
-                        <i class="fa-solid fa-person-hiking"></i>
-                    </div>
-                    <article>
-                        <div class="timeline-item-title">
-                            Mejora Continua
-                        </div>
-                        <div class="timeline-item-content">
-                            Iteramos y mejoramos constantemente los modelos basándonos en nuevos datos y retroalimentación.
-                        </div>
-                    </article>                 
-                </div>
-                
+    <!-- Sección 02 - ¿Qué es? -->
+    <section class="section-what-is container my-5">
+        <h2 class="my-4">¿Qué es?</h2>
+        <div class="row row-cols-2 align-items-center px-3 py-4 position-relative px-0">
+            <div class="custom-shape-divider-bottom-1730132633 px-0">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
+                </svg>
             </div>
-            
-        </div>
-
-    </section>
-
-    <!-- Sección 03 - card -->
-    <section class="section-card  pb-5 position-relative">
-        <div class="container row row-cols-1 row-cols-lg-2 justify-content-center align-items-center h-100 ">
-            <div class="col section-title text-center text-lg-start">
-                <h2>¿Por Qué Elegirnos para sus Proyectos de IA y ML?</h2>
-            </div>
-            
-            <div class="col">
-                <div class="card-container card-slick">
-                    <div class="card-wraper card-1">
-                        <div class="d-flex align-items-center">
-                            <h5>Experiencia Multidisciplinaria</h5>
-                        </div>
-                        <p>Nuestro equipo combina experiencia en IA, ciencia de datos, ingeniería de software y conocimiento del dominio empresarial.</p>
-                    </div>
-
-                    <div class="card-wraper card-2">
-                        <div class="d-flex align-items-center">
-                            <h5>Enfoque Personalizado</h5>
-                        </div>
-                        <p>Desarrollamos soluciones a medida que se adaptan perfectamente a sus necesidades y objetivos específicos.</p>
-                    </div>
-                    <div class="card-wraper card-3">
-                        <div class="d-flex align-items-center">
-                            <h5>Innovación Constante</h5>
-                        </div>
-                        <p>Nos mantenemos a la vanguardia de las últimas tendencias y avances en IA y ML.</p>
-                    </div>
-                    <div class="card-wraper card-4">
-                        <div class="d-flex align-items-center">
-                            <h5>Escalabilidad</h5>
-                        </div>
-                        <p>Nuestras soluciones están diseñadas para crecer con su negocio.</p>
-                    </div>
-                    <div class="card-wraper card-5">
-                        <div class="d-flex align-items-center">
-                            <h5>Compromiso con la Ética</h5>
-                        </div>
-                        <p>Implementamos IA responsable, considerando aspectos éticos y de privacidad en cada proyecto.</p>
-                    </div>
+            <!-- columna 01 -->
+            <div class="col-12 col-lg-6 d-flex d-block justify-content-center">
+                <div class="img-what-is-custom-shape">
                 </div>
             </div>
-        </div>
-        <div class="custom-shape-divider-bottom-1730155055">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z" class="shape-fill"></path>
-            </svg>
+            <!-- columna 02 -->
+            <div class="col-12 col-lg-6">
+                <div class="mt-4 mt-lg-0 section-what-is-description">
+                    <p>La Inteligencia Artificial (IA) es una rama de la informática que se centra en la creación de sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el aprendizaje, el razonamiento, la resolución de problemas y la toma de decisiones. La IA abarca una variedad de tecnologías, incluyendo el aprendizaje automático (machine learning), el procesamiento del lenguaje natural (NLP), la visión por computadora y los sistemas de recomendación.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contáctanos -->
     <section class="section-contact parallax" id="contact">
-        <div class="container d-flex justify-content-center align-items-center h-100 ">
-            <div class="position-relative">
+        <div class="container d-flex justify-content-center align-items-center h-100">
+            <div>
                 <h3 class="text-center text-black">
                     <div>
                         ¿Interesado en nuestros servicios?
@@ -557,11 +235,10 @@
                         </div>
                     </a>
                 </div>
-                
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="section-footer" >
         <div class="container">
@@ -573,7 +250,7 @@
                     </div>
                     <div class="section-footer-logo-base"></div>
                 </div>
-                <div class="col-12 col-md-4 section-footer-learn mt-md-3 mt-5">
+                <div class="col-12 col-md-4 section-footer-learn mt-md-3 mt-4">
                     <h5 class="me-2 mb-3 text-center text-md-start ">Sobre nosotros</h5>
                     <div class="text-center text-md-start text-break">
                         <p>Brindamos soluciones tecnológicas personalizadas para optimizar procesos y mejorar el rendimiento empresarial, desde consultoría hasta desarrollo de software e inteligencia artificial.</p>
@@ -606,14 +283,13 @@
                 </div>
             </div>
         </div>
-        
     </footer>
 
 </body>
 <!-- Slick JS -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="/public/librerias/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/public/scripts/script.js"></script>
+<script type="text/javascript" src="/public/librerias/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/public/scripts/script.js"></script>
 
 </html>
