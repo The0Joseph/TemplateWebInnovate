@@ -1,7 +1,17 @@
+:root{
+    /* Sección Capacidades Tecnológicas */
+    --color-capacity-title: var(--color-gris-azulado-paleta-1);
+    --color-capacity-card-shadow: var(--color-gris-claro-paleta-4);
+    --color-capacity-card-title: var(--color-gris-azulado-paleta-1);
+
+    --color-capacity-card-title-background-hover: #3e4144;
+    --color-capacity-card-title-shadow-hover: #3e4144;
+    --color-capacity-card-title-shadow-img-hover: #3e4144;
+}
 
 /* Carecteriscas */
 .fondo-svg{
-    fill: var(--color-amarillo-paleta-1) !important;
+    fill: var(--color-burbuja) !important;
 }
 
 .section-feature{
@@ -14,7 +24,7 @@
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    color: var(--color-amarillo-paleta-5);
+    color: var(--color-capacity-title);
 }
 
 .section-feature-card{
@@ -39,7 +49,6 @@
     top: 6rem;
 }
 
-
 .section-feature-card .section-feature-card-img h4{
     position: absolute;
     width: 260px;
@@ -50,14 +59,14 @@
     bottom: -50px;
     left: 50%;
     transform: translate(-50%, 0%);
-    background-color: var(--color-amarillo-paleta-4);
+    background-color: var(--color-capacity-card-title-background-hover);
     padding: 10px 0;
     visibility: hidden;
     transition: all 0.3s ease;
     opacity: 0;
     backdrop-filter: blur(19px);
     color: white;
-    box-shadow: 0px 1px 6px 2px var(--color-amarillo-paleta-4);
+    box-shadow: 0px 1px 6px 2px var(--color-capacity-card-title-shadow-hover);
 }
 
 .section-feature-card-img{
@@ -70,7 +79,7 @@
     max-width: 100%;
     object-fit: cover;
     transition: all 0.1s ease;
-    box-shadow: 0px 1px 12px 5px #d9d8cea8;
+    box-shadow: 0px 1px 12px 5px var(--color-capacity-card-shadow);
     border-radius: 5px;
 }
 .section-feature-card-img::before,
@@ -88,7 +97,6 @@
     bottom: 20px;
     right: 0px;
 }
-
 
 .section-feature-card-img:hover::before{
     transform: scale(1.1);

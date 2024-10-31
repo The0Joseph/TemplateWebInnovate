@@ -1,4 +1,13 @@
+:root{
+    /* Sección Clientes */
+    --color-client-title: var(--color-gris-azulado-paleta-1);
+    --color-client-border: var(--color-gris-claro-paleta-1);
 
+    --color-client-btn-arrow-color: var(--color-gris-claro-paleta-2);
+    --color-client-btn-arrow-color-hover: var(--color-gris-claro-paleta-1);
+    --color-client-btn-arrow-background: var(--color-gris-azulado-paleta-1);
+    --color-client-btn-arrow-background-hover: var(--color-gris-azulado-paleta-2);
+}
 
 .content-clients{
     transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -8,9 +17,8 @@
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    color: var(--color-amarillo-paleta-5);
+    color: var(--color-client-title);
 }
-
 
 .content-clients img{
     width: 80%;
@@ -26,7 +34,7 @@
     padding: 56px 0;
     border-style: solid;
     border-width: 0 1px 1px 0;
-    border-color: #e4e4e4;
+    border-color: var(--color-client-border);
 }
 
 .content-clients-img div:last-child{
@@ -43,15 +51,16 @@
 
 
 .btn-ver-mas{
-    background-color: var(--color-amarillo-paleta-3);
+    color: var(--color-client-btn-arrow-color);
+    background-color: var(--color-client-btn-arrow-background);
     border: none;
     padding: 10px 30px;
     border-radius: 10px;
-    color: var(--color-blanco);
 }
 
 .btn-ver-mas:hover{
-    background-color: var(--color-amarillo-paleta-2);
+    background-color: var(--color-client-btn-arrow-background-hover);
+    color: var(--color-client-btn-arrow-color-hover);
 }
 
 

@@ -10,7 +10,7 @@
 }
 
 .section-contact-text-02{
-    color: var(--color-amarillo-paleta-5);
+    color: var(--color-contact-title-bottom);
 }
 
 .section-contact{
@@ -18,7 +18,7 @@
 }
 
 .section-contact h3{
-    color: var(--color-blanco);
+    color: var(--color-contact-title-top) !important;
 }
 
 .section-contact-content-icons{
@@ -61,8 +61,8 @@
 }
 
 .icon-whatsapp{
-    color: var(--color-blanco);
-    background-color: var(--color-whatsapp);
+    color: var(--color-contact-button-left-color);
+    background-color: var(--color-contact-button-left-background);
 }
 
 .icon-whatsapp:hover,
@@ -78,8 +78,8 @@
 }
 
 .icon-email{
-    background-color: var(--color-blanco);
-    color: black;
+    background-color: var(--color-contact-button-rigth-background);
+    color: var(--color-contact-button-rigth-color);
 }
 
 .icon-email .icon-title{

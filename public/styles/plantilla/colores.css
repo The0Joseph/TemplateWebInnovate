@@ -5,11 +5,15 @@
     --color-blanco: #ffffff;
     --color-lightgray: lightgray;
     --color-gray: gray;
+
+    --colo-negro-suave: rgb(17, 17, 17); 
     
-    --color-navbar: #DDD273; 
+    /* --color-navbar: #DDD273;  */
+    --color-navbar: #3e4144; 
     --color-nav-tecnologia: #6e99e2;
     --color-nav-service: #F07937;
-    --color-titulo-innovate: #AFA01E;
+    /* --color-titulo-innovate: #AFA01E; */
+    --color-titulo-innovate: #f7e47f;
     
     --color-whatsapp: #25D366;
     --color-facebook: #2050b3;
@@ -23,4 +27,77 @@
     --color-amarillo-paleta-4: #c7ac2f;
     --color-amarillo-paleta-5: #b49315;
     --color-amarillo-paleta-6: #816D22;
+
+    --color-gris-paleta-1: #b5b5b5;
+    --color-gris-paleta-2: #8c8c8c;
+    --color-gris-paleta-3: #666666;
+    --color-gris-paleta-4: #515151;
+    --color-gris-paleta-5: #3c3c3c;
+    
+    --color-gris-claro-paleta-1: #dcdcdc;
+    --color-gris-claro-paleta-2: #d3d3d3;
+    --color-gris-claro-paleta-3: #c9c9c9;
+    --color-gris-claro-paleta-4: #bdbdbd;
+    --color-gris-claro-paleta-5: #a7a7a7;
+
+    --color-gris-azulado-paleta-1: #65727c;
+    --color-gris-azulado-paleta-2: #535b61;
+    --color-gris-azulado-paleta-3: #474b4e;
+    --color-gris-azulado-paleta-4: #45484a;
+    --color-gris-azulado-paleta-5: #3e4144;
+
+    --color-escala-gris-01: #e5e5e5;
+    --color-escala-gris-02: #cbcbcb;
+    --color-escala-gris-03: #b2b2b2;
+    --color-escala-gris-04: #999999;
+    --color-escala-gris-05: #818181;
+    --color-escala-gris-06: #6a6a6a;
+    --color-escala-gris-07: #585858;
+    --color-escala-gris-08: #464646;
+    --color-escala-gris-09: #363636;
+    --color-escala-gris-10: #262626;
+    --color-escala-gris-11: #161616;
+
+
+    --color-tarjeta-dorada-00: #E9C95C;
+    --color-tarjeta-dorada-01: #d6a222;
+    --color-tarjeta-dorada-02: #f7e47f;
+    --color-tarjeta-dorada-03: #957518;
+    --color-tarjeta-dorada-04: #988853;
+    --color-tarjeta-dorada-05: #aca46e;
+
+
+    /* Sección navbar */
+    --color-navbar-background: #3e4144; 
+    --color-navbar-title-link: white;
+    --color-navbar-title-link-active: #f7e47f;
+    --color-navbar-title-link-hover: #f7e47f;
+    --color-navbar-submenu-title-link: #f7e47f;
+    --color-navbar-submenu-subtitle-link-hover: #f7e47f;
+    --color-navbar-submenu-column-color-01: #f7e47f;
+    --color-navbar-submenu-column-color-02: #f7e47f;
+    
+    --color-navbar-border: #6a6a6a;
+
+    /* Fondo - burbujas */
+    --color-burbuja: var(--color-escala-gris-02);
+
+
+    /* Sección Presentación */
+    --color-presentation-title: white;
+    --color-presentation-description: white;
+   
+
+    /* Sección Contátanos */
+    --color-contact-title-top: #3e4144;
+    --color-contact-title-bottom: var(--color-tarjeta-dorada-01);
+
+    --color-contact-button-left-color: #ffffff;
+    --color-contact-button-left-background: #25D366;
+    --color-contact-button-left-hover: #3e4144;
+
+    --color-contact-button-rigth-color: #000000;
+    --color-contact-button-rigth-background: #ffffff;
+    --color-contact-button-rigth-hover: #3e4144;
+
 }

@@ -10,15 +10,10 @@
     transition: top 0.3s ease, background-color 0.3s ease;
 }
 #navbar:hover{
-    background-color: var(--color-navbar);
+    /* background-color: var(--color-navbar); */
+    background-color: var(--color-navbar-background);
 }
 
-.section-service .section-service-title{
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    color: var(--color-amarillo-paleta-5);
-}
 
 .navbar-hidden {
     top: -100px !important; /* Ajusta según la altura de tu navbar */
@@ -26,7 +21,8 @@
 
 .navbar-visible {
     top: 0 !important;
-    background-color: var(--color-navbar);
+    /* background-color: var(--color-navbar); */
+    background-color: var(--color-navbar-background);
 }
 
 .navbar-transparent {
@@ -40,13 +36,13 @@
 }
 
 .navbar-toggler:focus{
-    outline: #ffffff solid 1px;
     outline-offset: none;
     
 }
 
 .navbar-nav .nav-link {
-    color: white;
+    /* color: white; */
+    color: var(--color-navbar-title-link);
     position: relative;
     
 }
@@ -56,7 +52,7 @@
     width: 0;
     height: 3px;
     opacity: 0;
-    background-color: var(--color-titulo-innovate);
+    background-color: var(--color-navbar-title-link-hover);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -65,7 +61,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--color-titulo-innovate);
+    color: var(--color-navbar-title-link-hover);
 }
 
 .navbar-nav .nav-link:hover::before{
@@ -75,11 +71,11 @@
 
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link:active{
-    color: var(--color-titulo-innovate);
+    color: var(--color-navbar-title-link-hover);
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: var(--color-titulo-innovate);
+    color: var(--color-navbar-title-link-active);
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -95,12 +91,10 @@
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0px;
-    
 } 
 
 .navbar-toggler{
-    border: #ffffff solid 2px;
-    
+    border: var(--color-navbar-border) solid 2px;
 }
 
 .navbar-toggler span{
